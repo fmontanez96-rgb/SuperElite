@@ -1,0 +1,16 @@
+{
+  "media": [
+    {
+      "id": "m-ariana-1",
+      "characterId": "ariana-grande",
+      "src": "https://media.tenor.com/VSITn9fEIEgAAAAM/ass-hot.gif",
+      "type": "gif"
+    },
+    {
+      "id": "m-ariana-local",
+      "characterId": "ariana-grande",
+      "src": "Multimedia/20211217_160705.jpg",
+      "type": "image"
+    }
+  ]
+}

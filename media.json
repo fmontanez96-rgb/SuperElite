@@ -119,186 +119,87 @@
       "characterId": "ariana-grande",
       "src": "Multimedia/arianagrandej (11).jpg",
       "type": "image"
-    },
-    {
-      "id": "m-ariana-21",
-      "characterId": "ariana-grande",
-      "src": "Multimedia/arianagrande.jpg",
-      "type": "image"
-    },
-    {
-      "id": "m-ariana-22",
-      "characterId": "ariana-grande",
-      "src": "Multimedia/arianagrande.jpg",
-      "type": "image"
-    },
-    {
-      "id": "m-ariana-23",
-      "characterId": "ariana-grande",
-      "src": "Multimedia/arianagrande.jpg",
-      "type": "image"
-    },
-    {
-      "id": "m-ariana-24",
-      "characterId": "ariana-grande",
-      "src": "Multimedia/arianagrande.jpg",
-      "type": "image"
-    },
-    {
-      "id": "m-ariana-25",
-      "characterId": "ariana-grande",
-      "src": "Multimedia/arianagrande.jpg",
-      "type": "image"
-    },
-    {
-      "id": "m-ariana-26",
-      "characterId": "ariana-grande",
-      "src": "Multimedia/arianagrande.jpg",
-      "type": "image"
-    },
-    {
-      "id": "m-ariana-27",
-      "characterId": "ariana-grande",
-      "src": "Multimedia/arianagrande.jpg",
-      "type": "image"
-    },
-    {
-      "id": "m-ariana-28",
-      "characterId": "ariana-grande",
-      "src": "Multimedia/arianagrande.jpg",
-      "type": "image"
-    },
-    {
-      "id": "m-ariana-29",
-      "characterId": "ariana-grande",
-      "src": "Multimedia/arianagrande.jpg",
-      "type": "image"
-    },
-    {
-      "id": "m-ariana-30",
-      "characterId": "ariana-grande",
-      "src": "Multimedia/arianagrande.jpg",
-      "type": "image"
-    },
-    {
-      "id": "m-ariana-31",
-      "characterId": "ariana-grande",
-      "src": "Multimedia/arianagrande.jpg",
-      "type": "image"
-    },
-    {
-      "id": "m-ariana-32",
-      "characterId": "ariana-grande",
-      "src": "Multimedia/arianagrande.jpg",
-      "type": "image"
-    },
-    {
-      "id": "m-ariana-33",
-      "characterId": "ariana-grande",
-      "src": "Multimedia/arianagrande.jpg",
-      "type": "image"
-    },
-    {
-      "id": "m-ariana-34",
-      "characterId": "ariana-grande",
-      "src": "Multimedia/arianagrande.jpg",
-      "type": "image"
-    },
-    {
-      "id": "m-ariana-35",
-      "characterId": "ariana-grande",
-      "src": "Multimedia/arianagrande.jpg",
-      "type": "image"
-    },
-    {
-      "id": "m-ariana-36",
-      "characterId": "ariana-grande",
-      "src": "Multimedia/arianagrande.jpg",
-      "type": "image"
-    },
-    {
-      "id": "m-ariana-37",
-      "characterId": "ariana-grande",
-      "src": "Multimedia/arianagrande.jpg",
-      "type": "image"
-    },
-    {
-      "id": "m-ariana-38",
-      "characterId": "ariana-grande",
-      "src": "Multimedia/arianagrande.jpg",
-      "type": "image"
-    },
-    {
-      "id": "m-ariana-39",
-      "characterId": "ariana-grande",
-      "src": "Multimedia/arianagrande.jpg",
-      "type": "image"
-    },
-    {
-      "id": "m-ariana-40",
-      "characterId": "ariana-grande",
-      "src": "Multimedia/arianagrande.jpg",
-      "type": "image"
-    },
-    {
-      "id": "m-ariana-41",
-      "characterId": "ariana-grande",
-      "src": "Multimedia/arianagrande.jpg",
-      "type": "image"
-    },
-    {
-      "id": "m-ariana-42",
-      "characterId": "ariana-grande",
-      "src": "Multimedia/arianagrande.jpg",
-      "type": "image"
-    },
-    {
-      "id": "m-ariana-43",
-      "characterId": "ariana-grande",
-      "src": "Multimedia/arianagrande.jpg",
-      "type": "image"
-    },
-    {
-      "id": "m-ariana-44",
-      "characterId": "ariana-grande",
-      "src": "Multimedia/arianagrande.jpg",
-      "type": "image"
-    },
-    {
-      "id": "m-ariana-45",
-      "characterId": "ariana-grande",
-      "src": "Multimedia/arianagrande.jpg",
-      "type": "image"
-    },
-    {
-      "id": "m-ariana-46",
-      "characterId": "ariana-grande",
-      "src": "Multimedia/arianagrande.jpg",
-      "type": "image"
-    },
-    {
-      "id": "m-ariana-47",
-      "characterId": "ariana-grande",
-      "src": "Multimedia/arianagrande.jpg",
-      "type": "image"
-    },
-    {
-      "id": "m-ariana-48",
-      "characterId": "ariana-grande",
-      "src": "Multimedia/arianagrande.jpg",
-      "type": "image"
-    },
-    {
-      "id": "m-ariana-49",
-      "characterId": "ariana-grande",
-      "src": "Multimedia/arianagrande.jpg",
-      "type": "image"
-    },
-    {
-      "id": "m-nicki-50",
+      },
+  {
+      "id": "m-nicki-1",
       "characterId": "nicki-nicole",
-      "src": "Multimedia/arianagrande.jpg",
+      "src": "Multimedia/nickinicolej (1).jpg",
       "type": "image"
-    }
+    },
+
+{
+      "id": "m-nicki-2",
+      "characterId": "nicki-nicole",
+      "src": "Multimedia/nickinicolej (2).jpg",
+      "type": "image"
+    },
+{
+      "id": "m-nicki-3",
+      "characterId": "nicki-nicole",
+      "src": "Multimedia/nickinicolej (3).jpg",
+      "type": "image"
+    },
+{
+      "id": "m-nicki-4",
+      "characterId": "nicki-nicole",
+      "src": "Multimedia/nickinicolej (4).jpg",
+      "type": "image"
+    },
+{
+      "id": "m-nicki-5",
+      "characterId": "nicki-nicole",
+      "src": "Multimedia/nickinicolej (5).jpg",
+      "type": "image"
+    },
+{
+      "id": "m-nicki-6",
+      "characterId": "nicki-nicole",
+      "src": "Multimedia/nickinicolej (6).jpg",
+      "type": "image"
+    },
+{
+      "id": "m-nicki-7",
+      "characterId": "nicki-nicole",
+      "src": "Multimedia/nickinicolej (7).jpg",
+      "type": "image"
+    },
+{
+      "id": "m-nicki-8",
+      "characterId": "nicki-nicole",
+      "src": "Multimedia/nickinicolej (8).jpg",
+      "type": "image"
+    },
+{
+      "id": "m-nicki-9",
+      "characterId": "nicki-nicole",
+      "src": "Multimedia/nickinicolej (9).jpg",
+      "type": "image"
+    },
+{
+      "id": "m-nicki-10",
+      "characterId": "nicki-nicole",
+      "src": "Multimedia/nickinicolej (10).jpg",
+      "type": "image"
+    },
+{
+      "id": "m-nicki-11",
+      "characterId": "nicki-nicole",
+      "src": "Multimedia/nickinicolej (11).jpg",
+      "type": "image"
+    },
+
+{
+      "id": "m-nicki-12",
+      "characterId": "nicki-nicole",
+      "src": "Multimedia/nickinicoleg (1).jpg",
+      "type": "image"
+    },
+
+{
+      "id": "m-nicki-13",
+      "characterId": "nicki-nicole",
+      "src": "Multimedia/nickinicoleg (2).jpg",
+      "type": "image"
+    },
   ]
 }

@@ -236,6 +236,12 @@ function App() {
                 {view.page === 'group' && <GroupScreen group={selectedGroup} characters={groupCharacters} onBack={() => navigate({ page: 'characters' })} onAdd={() => openNewCharacter(selectedGroup.id)} onOpen={(id) => navigate({ page: 'profile', characterId: id })} />}
                 {view.page === 'profile' && selectedCharacter && <ProfileScreen character={selectedCharacter} mediaCount={selectedCharacterMedia.length} onBack={() => navigate({ page: 'group', groupId: selectedCharacter.group })} onGallery={() => navigate({ page: 'characterGallery', characterId: selectedCharacter.id })} onEdit={() => openEditCharacter(selectedCharacter)} onDelete={() => deleteCharacter(selectedCharacter.id)} />}
                 {view.page === 'characterGallery' && selectedCharacter && <CharacterGallery character={selectedCharacter} items={selectedCharacterMedia} settings={playbackSettings} onSettingsChange={updatePlaybackSettings} onPlay={(items) => openPlayer(items, `Galería de ${selectedCharacter.name}`)} onBack={() => navigate({ page: 'profile', characterId: selectedCharacter.id })} onAdd={() => setMediaModal({ character: selectedCharacter })} />}
+                {view.page === 'ranking' && <RankingScreen onNavigate={navigate} />}
+                {view.page === 'rankingSub1' && <RankingSub1Screen onBack={() => navigate({ page: 'ranking' })} />}
+                {view.page === 'rankingSub2' && <RankingSub2Screen onBack={() => navigate({ page: 'ranking' })} />}
+                {view.page === 'batallas' && <BatallasScreen onNavigate={navigate} />}
+                {view.page === 'batallasSub1' && <BatallasSub1Screen onBack={() => navigate({ page: 'batallas' })} />}
+                {view.page === 'batallasSub2' && <BatallasSub2Screen onBack={() => navigate({ page: 'batallas' })} />}
             </main>
             {characterModal && <CharacterFormModal initial={characterModal.character} onClose={() => setCharacterModal(null)} onSave={saveCharacter} />}
             {mediaModal && <MediaFormModal character={mediaModal.character} onClose={() => setMediaModal(null)} onSave={saveMedia} />}
@@ -249,12 +255,14 @@ function TopNav({ currentPage, onNavigate }) {
         <header className="metal-panel sticky top-0 z-30 border-b border-cyan-200/20 bg-zinc-950/85 backdrop-blur-xl">
             <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
                 <button onClick={() => onNavigate({ page: 'characters' })} className="text-left">
-                    <p className="text-xs font-bold uppercase tracking-[.35em] text-cyan-200"></p>
+                    <p className="text-xs font-bold uppercase tracking-[.35em] text-cyan-200">Cabecera oficial</p>
                     <h1 className="cartoon-title text-4xl leading-none sm:text-5xl">SuperEliteG2</h1>
                 </button>
-                <nav className="metal-card metal-shadow grid grid-cols-2 gap-2 rounded-2xl border border-white/20 p-1">
-                    <button onClick={() => onNavigate({ page: 'characters' })} className={`metal-button rounded-xl px-5 py-3 font-black transition ${currentPage !== 'gallery' ? 'bg-gradient-to-br from-cyan-200 via-white to-slate-300 text-zinc-950' : 'bg-gradient-to-br from-slate-700 via-slate-900 to-black text-white hover:bg-white/10'}`}>👥 Personajes</button>
-                    <button onClick={() => onNavigate({ page: 'gallery' })} className={`metal-button rounded-xl px-5 py-3 font-black transition ${currentPage === 'gallery' ? 'bg-gradient-to-br from-cyan-200 via-white to-slate-300 text-zinc-950' : 'bg-gradient-to-br from-slate-700 via-slate-900 to-black text-white hover:bg-white/10'}`}>🖼️ Galería</button>
+                <nav className="metal-card metal-shadow grid grid-cols-2 md:grid-cols-4 gap-2 rounded-2xl border border-white/20 p-1">
+                    <button onClick={() => onNavigate({ page: 'characters' })} className={`metal-button rounded-xl px-4 py-3 text-center font-black transition ${currentPage === 'characters' || currentPage === 'group' || currentPage === 'profile' ? 'bg-gradient-to-br from-cyan-200 via-white to-slate-300 text-zinc-950' : 'bg-gradient-to-br from-slate-700 via-slate-900 to-black text-white hover:bg-white/10'}`}>👥 Personajes</button>
+                    <button onClick={() => onNavigate({ page: 'gallery' })} className={`metal-button rounded-xl px-4 py-3 text-center font-black transition ${currentPage === 'gallery' ? 'bg-gradient-to-br from-cyan-200 via-white to-slate-300 text-zinc-950' : 'bg-gradient-to-br from-slate-700 via-slate-900 to-black text-white hover:bg-white/10'}`}>🖼️ Galería</button>
+                    <button onClick={() => onNavigate({ page: 'ranking' })} className={`metal-button rounded-xl px-4 py-3 text-center font-black transition ${currentPage.startsWith('ranking') ? 'bg-gradient-to-br from-cyan-200 via-white to-slate-300 text-zinc-950' : 'bg-gradient-to-br from-slate-700 via-slate-900 to-black text-white hover:bg-white/10'}`}>🏆 Ranking</button>
+                    <button onClick={() => onNavigate({ page: 'batallas' })} className={`metal-button rounded-xl px-4 py-3 text-center font-black transition ${currentPage.startsWith('batallas') ? 'bg-gradient-to-br from-cyan-200 via-white to-slate-300 text-zinc-950' : 'bg-gradient-to-br from-slate-700 via-slate-900 to-black text-white hover:bg-white/10'}`}>⚔️ Batallas</button>
                 </nav>
             </div>
         </header>
@@ -717,6 +725,82 @@ function Modal({ title, children, onClose }) {
 
 function FormActions({ onClose, saveLabel }) {
     return <div className="mt-2 grid gap-3 sm:grid-cols-2"><button type="button" onClick={onClose} className="metal-button rounded-2xl bg-gradient-to-br from-slate-500 via-slate-800 to-black px-5 py-4 font-black hover:bg-white/20">Cancelar</button><button type="submit" className="metal-button rounded-2xl bg-gradient-to-br from-emerald-300 via-emerald-600 to-emerald-950 px-5 py-4 font-black">{saveLabel}</button></div>;
+}
+
+function RankingScreen({ onNavigate }) {
+    return (
+        <section>
+            <SectionTitle eyebrow="Clasificaciones" title="Ranking Oficial" description="Explora las posiciones más altas y las métricas de rendimiento globales." />
+            <div className="grid gap-5 sm:grid-cols-2">
+                <button onClick={() => onNavigate({ page: 'rankingSub1' })} className="metal-button illuminated-card rounded-3xl bg-gradient-to-br from-amber-400 via-amber-600 to-amber-900 p-8 text-left transition hover:-translate-y-1 hover:scale-[1.02]">
+                    <span className="text-5xl">👑</span>
+                    <h2 className="letter-relief mt-8 text-3xl uppercase tracking-wide">Top Personajes</h2>
+                    <p className="mt-2 text-sm font-semibold text-white/80">Ver clasificación de líderes</p>
+                </button>
+                <button onClick={() => onNavigate({ page: 'rankingSub2' })} className="metal-button illuminated-card rounded-3xl bg-gradient-to-br from-purple-400 via-purple-600 to-purple-900 p-8 text-left transition hover:-translate-y-1 hover:scale-[1.02]">
+                    <span className="text-5xl">📊</span>
+                    <h2 className="letter-relief mt-8 text-3xl uppercase tracking-wide">Estadísticas</h2>
+                    <p className="mt-2 text-sm font-semibold text-white/80">Ver analíticas detalladas</p>
+                </button>
+            </div>
+        </section>
+    );
+}
+
+function RankingSub1Screen({ onBack }) {
+    return (
+        <section>
+            <HeaderBar title="👑 Clasificación de Personajes" subtitle="Los personajes con mejor puntuación en la arena" onBack={onBack} />
+            <EmptyState title="Pantalla de Clasificación" text="El tablero de líderes e hitos estará disponible próximamente." />
+        </section>
+    );
+}
+
+function RankingSub2Screen({ onBack }) {
+    return (
+        <section>
+            <HeaderBar title="📊 Estadísticas Detalladas" subtitle="Métricas y balance global de rendimiento" onBack={onBack} />
+            <EmptyState title="Pantalla de Analíticas" text="Los reportes y datos avanzados se habilitarán próximamente." />
+        </section>
+    );
+}
+
+function BatallasScreen({ onNavigate }) {
+    return (
+        <section>
+            <SectionTitle eyebrow="Arena G2" title="Panel de Batallas" description="Gestiona los enfrentamientos directos o revisa el registro histórico de combates." />
+            <div className="grid gap-5 sm:grid-cols-2">
+                <button onClick={() => onNavigate({ page: 'batallasSub1' })} className="metal-button illuminated-card rounded-3xl bg-gradient-to-br from-red-400 via-red-600 to-red-900 p-8 text-left transition hover:-translate-y-1 hover:scale-[1.02]">
+                    <span className="text-5xl">⚔️</span>
+                    <h2 className="letter-relief mt-8 text-3xl uppercase tracking-wide">Nueva Batalla</h2>
+                    <p className="mt-2 text-sm font-semibold text-white/80">Iniciar un versus interactivo</p>
+                </button>
+                <button onClick={() => onNavigate({ page: 'batallasSub2' })} className="metal-button illuminated-card rounded-3xl bg-gradient-to-br from-cyan-400 via-cyan-600 to-cyan-900 p-8 text-left transition hover:-translate-y-1 hover:scale-[1.02]">
+                    <span className="text-5xl">🏆</span>
+                    <h2 className="letter-relief mt-8 text-3xl uppercase tracking-wide">Historial</h2>
+                    <p className="mt-2 text-sm font-semibold text-white/80">Ver resultados de combates previos</p>
+                </button>
+            </div>
+        </section>
+    );
+}
+
+function BatallasSub1Screen({ onBack }) {
+    return (
+        <section>
+            <HeaderBar title="⚔️ Nueva Batalla Arena" subtitle="Zona de combate cara a cara 1v1" onBack={onBack} />
+            <EmptyState title="Arena en Mantenimiento" text="El simulador de batallas interactivas estará disponible muy pronto." />
+        </section>
+    );
+}
+
+function BatallasSub2Screen({ onBack }) {
+    return (
+        <section>
+            <HeaderBar title="🏆 Historial de Encuentros" subtitle="Registro histórico de campeones y victorias" onBack={onBack} />
+            <EmptyState title="Historial Vacío" text="Las bitácoras e informes de combate pasados se habilitarán próximamente." />
+        </section>
+    );
 }
 
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);

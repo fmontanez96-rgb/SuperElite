@@ -119,15 +119,14 @@
       "characterId": "ariana-grande",
       "src": "Multimedia/arianagrandej (11).jpg",
       "type": "image"
-      },
-  {
+    },
+    {
       "id": "m-nicki-1",
       "characterId": "nicki-nicole",
       "src": "Multimedia/nickinicolej (1).jpg",
       "type": "image"
     },
-
-{
+    {
       "id": "m-nicki-2",
       "characterId": "nicki-nicole",
       "src": "Multimedia/nickinicolej (2).jpg",
@@ -198,7 +197,7 @@
       "characterId": "nicki-nicole",
       "src": "Multimedia/nickinicoleg (2).gif",
       "type": "image"
-    }
+    },
     {
 "id": "m-sabrina-1",
 "characterId": "sabrina-carpenter",
@@ -342,7 +341,7 @@
 "characterId": "sabrina-carpenter",
 "src": "Multimedia/sabrinacarpenterj (24).jpg",
 "type": "image"
-}
+},
     {
 "id": "m-sabrina-25",
 "characterId": "sabrina-carpenter",
@@ -414,7 +413,7 @@
 "characterId": "sabrina-carpenter",
 "src": "Multimedia/sabricarpenterg (12).gif",
 "type": "image"
-}
+},
     {
 "id": "m-sabrina-37",
 "characterId": "sabrina-carpenter",

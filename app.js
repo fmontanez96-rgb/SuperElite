@@ -10,17 +10,7 @@ const GROUPS = [
 const EMPTY_FORM = {
     name: '', birthDate: '', country: '', city: '', height: '', photo: '', group: 'cantantes'
 };
-const [ratings, setRatings] = React.useState({});
 
-React.useEffect(() => {
-    fetch('calificaciones.json')
-        .then(res => {
-            if (!res.ok) throw new Error("No se pudo cargar calificaciones.json");
-            return res.json();
-        })
-        .then(data => setRatings(data))
-        .catch(err => console.error("Error leyendo etiquetas:", err));
-}, []);
 const STORAGE_KEY = 'supereliteg2-state-v1';
 const DATA_URL = 'characters.json';
 const MEDIA_DATA_URL = 'media.json';
@@ -246,12 +236,6 @@ function App() {
                 {view.page === 'group' && <GroupScreen group={selectedGroup} characters={groupCharacters} onBack={() => navigate({ page: 'characters' })} onAdd={() => openNewCharacter(selectedGroup.id)} onOpen={(id) => navigate({ page: 'profile', characterId: id })} />}
                 {view.page === 'profile' && selectedCharacter && <ProfileScreen character={selectedCharacter} mediaCount={selectedCharacterMedia.length} onBack={() => navigate({ page: 'group', groupId: selectedCharacter.group })} onGallery={() => navigate({ page: 'characterGallery', characterId: selectedCharacter.id })} onEdit={() => openEditCharacter(selectedCharacter)} onDelete={() => deleteCharacter(selectedCharacter.id)} />}
                 {view.page === 'characterGallery' && selectedCharacter && <CharacterGallery character={selectedCharacter} items={selectedCharacterMedia} settings={playbackSettings} onSettingsChange={updatePlaybackSettings} onPlay={(items) => openPlayer(items, `Galería de ${selectedCharacter.name}`)} onBack={() => navigate({ page: 'profile', characterId: selectedCharacter.id })} onAdd={() => setMediaModal({ character: selectedCharacter })} />}
-                {view.page === 'ranking' && <RankingScreen onNavigate={navigate} />}
-                {view.page === 'rankingSub1' && <RankingSub1Screen characters={characters} ratings={ratings} onBack={() => navigate({ page: 'ranking' })} />}
-                {view.page === 'rankingSub2' && <RankingSub2Screen characters={characters} ratings={ratings} onBack={() => navigate({ page: 'ranking' })} />}
-                {view.page === 'batallas' && <BatallasScreen onNavigate={navigate} />}
-                {view.page === 'batallasSub1' && <BatallasSub1Screen onBack={() => navigate({ page: 'batallas' })} />}
-                {view.page === 'batallasSub2' && <BatallasSub2Screen onBack={() => navigate({ page: 'batallas' })} />}
             </main>
             {characterModal && <CharacterFormModal initial={characterModal.character} onClose={() => setCharacterModal(null)} onSave={saveCharacter} />}
             {mediaModal && <MediaFormModal character={mediaModal.character} onClose={() => setMediaModal(null)} onSave={saveMedia} />}
@@ -265,14 +249,12 @@ function TopNav({ currentPage, onNavigate }) {
         <header className="metal-panel sticky top-0 z-30 border-b border-cyan-200/20 bg-zinc-950/85 backdrop-blur-xl">
             <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
                 <button onClick={() => onNavigate({ page: 'characters' })} className="text-left">
-                    <p className="text-xs font-bold uppercase tracking-[.35em] text-cyan-200">Cabecera oficial</p>
+                    <p className="text-xs font-bold uppercase tracking-[.35em] text-cyan-200"></p>
                     <h1 className="cartoon-title text-4xl leading-none sm:text-5xl">SuperEliteG2</h1>
                 </button>
-                <nav className="metal-card metal-shadow grid grid-cols-2 md:grid-cols-4 gap-2 rounded-2xl border border-white/20 p-1">
-                    <button onClick={() => onNavigate({ page: 'characters' })} className={`metal-button rounded-xl px-4 py-3 text-center font-black transition ${currentPage === 'characters' || currentPage === 'group' || currentPage === 'profile' ? 'bg-gradient-to-br from-cyan-200 via-white to-slate-300 text-zinc-950' : 'bg-gradient-to-br from-slate-700 via-slate-900 to-black text-white hover:bg-white/10'}`}>👥 Personajes</button>
-                    <button onClick={() => onNavigate({ page: 'gallery' })} className={`metal-button rounded-xl px-4 py-3 text-center font-black transition ${currentPage === 'gallery' ? 'bg-gradient-to-br from-cyan-200 via-white to-slate-300 text-zinc-950' : 'bg-gradient-to-br from-slate-700 via-slate-900 to-black text-white hover:bg-white/10'}`}>🖼️ Galería</button>
-                    <button onClick={() => onNavigate({ page: 'ranking' })} className={`metal-button rounded-xl px-4 py-3 text-center font-black transition ${currentPage.startsWith('ranking') ? 'bg-gradient-to-br from-cyan-200 via-white to-slate-300 text-zinc-950' : 'bg-gradient-to-br from-slate-700 via-slate-900 to-black text-white hover:bg-white/10'}`}>🏆 Ranking</button>
-                    <button onClick={() => onNavigate({ page: 'batallas' })} className={`metal-button rounded-xl px-4 py-3 text-center font-black transition ${currentPage.startsWith('batallas') ? 'bg-gradient-to-br from-cyan-200 via-white to-slate-300 text-zinc-950' : 'bg-gradient-to-br from-slate-700 via-slate-900 to-black text-white hover:bg-white/10'}`}>⚔️ Batallas</button>
+                <nav className="metal-card metal-shadow grid grid-cols-2 gap-2 rounded-2xl border border-white/20 p-1">
+                    <button onClick={() => onNavigate({ page: 'characters' })} className={`metal-button rounded-xl px-5 py-3 font-black transition ${currentPage !== 'gallery' ? 'bg-gradient-to-br from-cyan-200 via-white to-slate-300 text-zinc-950' : 'bg-gradient-to-br from-slate-700 via-slate-900 to-black text-white hover:bg-white/10'}`}>👥 Personajes</button>
+                    <button onClick={() => onNavigate({ page: 'gallery' })} className={`metal-button rounded-xl px-5 py-3 font-black transition ${currentPage === 'gallery' ? 'bg-gradient-to-br from-cyan-200 via-white to-slate-300 text-zinc-950' : 'bg-gradient-to-br from-slate-700 via-slate-900 to-black text-white hover:bg-white/10'}`}>🖼️ Galería</button>
                 </nav>
             </div>
         </header>
@@ -375,82 +357,11 @@ function CharacterGallery({ character, items, settings, onSettingsChange, onPlay
 }
 
 function GeneralGallery({ items, settings, onSettingsChange, onPlay }) {
-    const [activeCharacters, setActiveCharacters] = useState({});
-
-    // Agrupar los elementos multimedia por personaje
-    const groupedItems = useMemo(() => {
-        const groups = {};
-        items.forEach(item => {
-            if (!item.character) return;
-            const charId = item.character.id;
-            if (!groups[charId]) {
-                groups[charId] = {
-                    character: item.character,
-                    media: []
-                };
-            }
-            groups[charId].media.push(item);
-        });
-        return Object.values(groups);
-    }, [items]);
-
-    const toggleCharacter = (charId) => {
-        setActiveCharacters(prev => ({
-            ...prev,
-            [charId]: !prev[charId]
-        }));
-    };
-
-    if (!items.length) {
-        return (
-            <section>
-                <SectionTitle eyebrow="Galería general" title="Toda la multimedia" description="Aquí se muestran todos los archivos cargados para todos los personajes." />
-                <EmptyState title="Galería vacía" text="No hay archivos en la galería general." />
-            </section>
-        );
-    }
-
     return (
         <section>
-            <SectionTitle eyebrow="Galería general" title="Toda la multimedia" description="Aquí se muestran todos los archivos cargados para todos los personajes." />
+            <SectionTitle eyebrow="" title="Galería General" description="" />
             <GalleryControls items={items} settings={settings} onSettingsChange={onSettingsChange} onPlay={onPlay} />
-            
-            <div className="flex flex-col gap-8">
-                {groupedItems.map(({ character, media }) => {
-                    const isActive = !!activeCharacters[character.id];
-                    const group = getGroup(character.group);
-                    
-                    return (
-                        <div key={character.id} className="rounded-3xl border border-white/10 bg-black/20 p-4 metal-shadow">
-                            {/* Ficha/Botón del Personaje */}
-                            <button 
-                                onClick={() => toggleCharacter(character.id)}
-                                className={`w-full text-left flex items-center justify-between p-4 rounded-2xl border-2 transition-all ${isActive ? `${group.border} bg-white/5` : 'border-white/10 hover:bg-white/5'}`}
-                            >
-                                <div className="flex items-center gap-4">
-                                    <div className="h-14 w-14 overflow-hidden rounded-full border border-white/20">
-                                        <img src={character.photo || fallbackPhoto} alt={character.name} className="h-full w-full object-cover" />
-                                    </div>
-                                    <div>
-                                        <h3 className="letter-relief texture-text text-2xl uppercase">{character.name}</h3>
-                                        <p className="text-xs font-semibold text-zinc-400 mt-1">{group.emoji} {group.label} · {media.length} archivo(s)</p>
-                                    </div>
-                                </div>
-                                <span className="text-2xl font-black text-cyan-400">
-                                    {isActive ? '▲ Ocultar' : '▼ Mostrar'}
-                                </span>
-                            </button>
-
-                            {/* Grid de imágenes condicional (Sólo si está activo) */}
-                            {isActive && (
-                                <div className="mt-6">
-                                    <MediaGrid items={media} emptyText="Este personaje no tiene multimedia." />
-                                </div>
-                            )}
-                        </div>
-                    );
-                })}
-            </div>
+            <MediaGrid items={items} emptyText="No hay archivos en la galería general." />
         </section>
     );
 }
@@ -735,214 +646,6 @@ function Modal({ title, children, onClose }) {
 
 function FormActions({ onClose, saveLabel }) {
     return <div className="mt-2 grid gap-3 sm:grid-cols-2"><button type="button" onClick={onClose} className="metal-button rounded-2xl bg-gradient-to-br from-slate-500 via-slate-800 to-black px-5 py-4 font-black hover:bg-white/20">Cancelar</button><button type="submit" className="metal-button rounded-2xl bg-gradient-to-br from-emerald-300 via-emerald-600 to-emerald-950 px-5 py-4 font-black">{saveLabel}</button></div>;
-}
-
-function RankingScreen({ onNavigate }) {
-    return (
-        <section>
-            <SectionTitle eyebrow="Clasificaciones" title="Ranking Oficial" description="Explora las posiciones más altas y las métricas de rendimiento globales." />
-            <div className="grid gap-5 sm:grid-cols-2">
-                <button onClick={() => onNavigate({ page: 'rankingSub1' })} className="metal-button illuminated-card rounded-3xl bg-gradient-to-br from-amber-400 via-amber-600 to-amber-900 p-8 text-left transition hover:-translate-y-1 hover:scale-[1.02]">
-                    <span className="text-5xl">👑</span>
-                    <h2 className="letter-relief mt-8 text-3xl uppercase tracking-wide">Top Personajes</h2>
-                    <p className="mt-2 text-sm font-semibold text-white/80">Ver clasificación de líderes</p>
-                </button>
-                <button onClick={() => onNavigate({ page: 'rankingSub2' })} className="metal-button illuminated-card rounded-3xl bg-gradient-to-br from-purple-400 via-purple-600 to-purple-900 p-8 text-left transition hover:-translate-y-1 hover:scale-[1.02]">
-                    <span className="text-5xl">📊</span>
-                    <h2 className="letter-relief mt-8 text-3xl uppercase tracking-wide">Estadísticas</h2>
-                    <p className="mt-2 text-sm font-semibold text-white/80">Ver analíticas detalladas</p>
-                </button>
-            </div>
-        </section>
-    );
-}
-
-function RankingSub1Screen({ characters, ratings, onBack }) {
-    const tags = [
-        "Facciones", "Ojos", "Boca", "Cabello", "Cintura", 
-        "Cola", "Pechos", "Piernas", "Cuerpo", "Talento", 
-        "Carisma", "Elegancia", "Sensualidad", "Dulzura", "Altura"
-    ];
-    
-    const [selectedTag, setSelectedTag] = React.useState("Facciones");
-
-    // Procesar y ordenar personajes según la etiqueta seleccionada
-    const rankedCharacters = React.useMemo(() => {
-        if (!characters) return [];
-        return characters
-            .map(char => {
-                const charRatings = ratings[char.id] || {};
-                const score = charRatings[selectedTag] !== undefined ? charRatings[selectedTag] : 0;
-                return { ...char, currentScore: score };
-            })
-            .sort((a, b) => b.currentScore - a.currentScore);
-    }, [characters, ratings, selectedTag]);
-
-    return (
-        <section className="space-y-6">
-            <HeaderBar title="👑 Clasificación por Atributos" subtitle="Explora las líderes oficiales según cada etiqueta de evaluación" onBack={onBack} />
-            
-            {/* Selector de Etiquetas de Rejilla Metálica */}
-            <div className="metal-panel metal-shadow rounded-2xl border border-white/10 p-4">
-                <p className="text-xs font-bold uppercase tracking-wider text-cyan-200 mb-3 text-center">Selecciona una Etiqueta para ver el Top</p>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2">
-                    {tags.map(tag => (
-                        <button 
-                            key={tag}
-                            onClick={() => setSelectedTag(tag)}
-                            className={`metal-button rounded-xl py-2 px-3 text-xs font-black uppercase tracking-wider transition-all duration-200 ${selectedTag === tag ? 'bg-gradient-to-br from-cyan-200 via-white to-slate-300 text-zinc-950 shadow-[0_0_15px_rgba(34,211,238,0.3)]' : 'bg-gradient-to-br from-zinc-800 to-zinc-950 text-slate-400 hover:text-white border border-white/5'}`}
-                        >
-                            {tag}
-                        </button>
-                    ))}
-                </div>
-            </div>
-
-            {/* Tabla de Clasificación Dinámica */}
-            <div className="metal-panel metal-shadow rounded-3xl border border-cyan-500/20 bg-zinc-950/90 overflow-hidden">
-                <div className="bg-gradient-to-r from-cyan-950/50 via-zinc-950 to-purple-950/50 px-6 py-4 border-b border-white/10 flex justify-between items-center">
-                    <h3 className="cartoon-title text-2xl tracking-wide text-white">TOP: {selectedTag}</h3>
-                    <span className="text-xs font-bold uppercase tracking-widest bg-cyan-400/10 text-cyan-300 border border-cyan-400/30 px-3 py-1 rounded-full">Arena Activa</span>
-                </div>
-
-                <div className="divide-y divide-white/5">
-                    {rankedCharacters.map((char, index) => {
-                        const isTop3 = index < 3;
-                        const medals = ["🥇", "🥈", "🥉"];
-                        
-                        return (
-                            <div key={char.id} className={`flex items-center justify-between px-6 py-4 transition-colors duration-150 hover:bg-white/5 ${index === 0 ? 'bg-amber-500/5' : ''}`}>
-                                <div className="flex items-center gap-4">
-                                    {/* Indicador de Posición */}
-                                    <div className="w-10 flex justify-center font-black text-xl">
-                                        {isTop3 ? (
-                                            <span className="text-2xl drop-shadow">{medals[index]}</span>
-                                        ) : (
-                                            <span className="text-slate-500 font-mono">#{index + 1}</span>
-                                        )}
-                                    </div>
-                                    
-                                    {/* Avatar o Miniatura del Personaje */}
-                                    <div className="relative h-12 w-12 overflow-hidden rounded-xl border border-white/20 bg-zinc-800 metal-shadow">
-                                        {char.avatarUrl || char.image ? (
-                                            <img src={char.avatarUrl || char.image} alt={char.name} className="h-full w-full object-cover object-top" />
-                                        ) : (
-                                            <div className="flex h-full w-full items-center justify-center text-xs font-bold text-slate-600">G2</div>
-                                        )}
-                                    </div>
-
-                                    {/* Información Básica */}
-                                    <div>
-                                        <h4 className="font-black text-lg text-white leading-tight tracking-wide">{char.name}</h4>
-                                        <p className="text-xs font-bold uppercase tracking-wider text-cyan-400/70">{char.groupName || 'Participante'}</p>
-                                    </div>
-                                </div>
-
-                                {/* Puntuación */}
-                                <div className="text-right">
-                                    <div className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 to-white drop-shadow font-mono">
-                                        {char.currentScore.toFixed(1)}
-                                    </div>
-                                    <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500">Puntos</p>
-                                </div>
-                            </div>
-                        );
-                    })}
-                    
-                    {rankedCharacters.length === 0 && (
-                        <div className="p-8 text-center text-slate-500 font-medium">No hay personajes registrados para clasificar.</div>
-                    )}
-                </div>
-            </div>
-        </section>
-    );
-}
-
-function RankingSub2Screen({ characters, ratings, onBack }) {
-    // Calculamos el promedio global de todas las etiquetas por personaje
-    const globalTop = React.useMemo(() => {
-        if (!characters) return [];
-        return characters
-            .map(char => {
-                const charRatings = ratings[char.id] || {};
-                const values = Object.values(charRatings);
-                const average = values.length > 0 ? values.reduce((a, b) => a + b, 0) / values.length : 0;
-                return { ...char, globalAverage: average };
-            })
-            .sort((a, b) => b.globalAverage - a.globalAverage);
-    }, [characters, ratings]);
-
-    return (
-        <section className="space-y-6">
-            <HeaderBar title="📊 Promedio Global Estelar" subtitle="Puntuación acumulada de todas las 15 métricas de rendimiento" onBack={onBack} />
-            
-            <div className="metal-panel metal-shadow rounded-3xl border border-purple-500/20 bg-zinc-950/90 overflow-hidden">
-                <div className="bg-gradient-to-r from-purple-950/50 via-zinc-950 to-zinc-950 px-6 py-4 border-b border-white/10">
-                    <h3 className="cartoon-title text-2xl tracking-wide text-white">Clasificación General Incontestada</h3>
-                </div>
-                
-                <div className="divide-y divide-white/5">
-                    {globalTop.map((char, index) => (
-                        <div key={char.id} className="flex items-center justify-between px-6 py-4 hover:bg-white/5">
-                            <div className="flex items-center gap-4">
-                                <div className="w-10 flex justify-center font-mono font-black text-lg text-purple-400">
-                                    #{index + 1}
-                                </div>
-                                <div>
-                                    <h4 className="font-black text-lg text-white">{char.name}</h4>
-                                    <p className="text-xs font-semibold text-slate-400">Balance general unificado</p>
-                                </div>
-                            </div>
-                            <div className="text-right">
-                                <div className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-white font-mono">
-                                    {char.globalAverage.toFixed(2)}
-                                </div>
-                                <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500">Promedio</p>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </section>
-    );
-}
-
-function BatallasScreen({ onNavigate }) {
-    return (
-        <section>
-            <SectionTitle eyebrow="Arena G2" title="Panel de Batallas" description="Gestiona los enfrentamientos directos o revisa el registro histórico de combates." />
-            <div className="grid gap-5 sm:grid-cols-2">
-                <button onClick={() => onNavigate({ page: 'batallasSub1' })} className="metal-button illuminated-card rounded-3xl bg-gradient-to-br from-red-400 via-red-600 to-red-900 p-8 text-left transition hover:-translate-y-1 hover:scale-[1.02]">
-                    <span className="text-5xl">⚔️</span>
-                    <h2 className="letter-relief mt-8 text-3xl uppercase tracking-wide">Nueva Batalla</h2>
-                    <p className="mt-2 text-sm font-semibold text-white/80">Iniciar un versus interactivo</p>
-                </button>
-                <button onClick={() => onNavigate({ page: 'batallasSub2' })} className="metal-button illuminated-card rounded-3xl bg-gradient-to-br from-cyan-400 via-cyan-600 to-cyan-900 p-8 text-left transition hover:-translate-y-1 hover:scale-[1.02]">
-                    <span className="text-5xl">🏆</span>
-                    <h2 className="letter-relief mt-8 text-3xl uppercase tracking-wide">Historial</h2>
-                    <p className="mt-2 text-sm font-semibold text-white/80">Ver resultados de combates previos</p>
-                </button>
-            </div>
-        </section>
-    );
-}
-
-function BatallasSub1Screen({ onBack }) {
-    return (
-        <section>
-            <HeaderBar title="⚔️ Nueva Batalla Arena" subtitle="Zona de combate cara a cara 1v1" onBack={onBack} />
-            <EmptyState title="Arena en Mantenimiento" text="El simulador de batallas interactivas estará disponible muy pronto." />
-        </section>
-    );
-}
-
-function BatallasSub2Screen({ onBack }) {
-    return (
-        <section>
-            <HeaderBar title="🏆 Historial de Encuentros" subtitle="Registro histórico de campeones y victorias" onBack={onBack} />
-            <EmptyState title="Historial Vacío" text="Las bitácoras e informes de combate pasados se habilitarán próximamente." />
-        </section>
-    );
 }
 
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);

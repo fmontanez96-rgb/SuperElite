@@ -357,11 +357,82 @@ function CharacterGallery({ character, items, settings, onSettingsChange, onPlay
 }
 
 function GeneralGallery({ items, settings, onSettingsChange, onPlay }) {
+    const [activeCharacters, setActiveCharacters] = useState({});
+
+    // Agrupar los elementos multimedia por personaje
+    const groupedItems = useMemo(() => {
+        const groups = {};
+        items.forEach(item => {
+            if (!item.character) return;
+            const charId = item.character.id;
+            if (!groups[charId]) {
+                groups[charId] = {
+                    character: item.character,
+                    media: []
+                };
+            }
+            groups[charId].media.push(item);
+        });
+        return Object.values(groups);
+    }, [items]);
+
+    const toggleCharacter = (charId) => {
+        setActiveCharacters(prev => ({
+            ...prev,
+            [charId]: !prev[charId]
+        }));
+    };
+
+    if (!items.length) {
+        return (
+            <section>
+                <SectionTitle eyebrow="Galería general" title="Toda la multimedia" description="Aquí se muestran todos los archivos cargados para todos los personajes." />
+                <EmptyState title="Galería vacía" text="No hay archivos en la galería general." />
+            </section>
+        );
+    }
+
     return (
         <section>
-            <SectionTitle eyebrow="" title="Galería General" description="" />
+            <SectionTitle eyebrow="Galería general" title="Toda la multimedia" description="Aquí se muestran todos los archivos cargados para todos los personajes." />
             <GalleryControls items={items} settings={settings} onSettingsChange={onSettingsChange} onPlay={onPlay} />
-            <MediaGrid items={items} emptyText="No hay archivos en la galería general." />
+            
+            <div className="flex flex-col gap-8">
+                {groupedItems.map(({ character, media }) => {
+                    const isActive = !!activeCharacters[character.id];
+                    const group = getGroup(character.group);
+                    
+                    return (
+                        <div key={character.id} className="rounded-3xl border border-white/10 bg-black/20 p-4 metal-shadow">
+                            {/* Ficha/Botón del Personaje */}
+                            <button 
+                                onClick={() => toggleCharacter(character.id)}
+                                className={`w-full text-left flex items-center justify-between p-4 rounded-2xl border-2 transition-all ${isActive ? `${group.border} bg-white/5` : 'border-white/10 hover:bg-white/5'}`}
+                            >
+                                <div className="flex items-center gap-4">
+                                    <div className="h-14 w-14 overflow-hidden rounded-full border border-white/20">
+                                        <img src={character.photo || fallbackPhoto} alt={character.name} className="h-full w-full object-cover" />
+                                    </div>
+                                    <div>
+                                        <h3 className="letter-relief texture-text text-2xl uppercase">{character.name}</h3>
+                                        <p className="text-xs font-semibold text-zinc-400 mt-1">{group.emoji} {group.label} · {media.length} archivo(s)</p>
+                                    </div>
+                                </div>
+                                <span className="text-2xl font-black text-cyan-400">
+                                    {isActive ? '▲ Ocultar' : '▼ Mostrar'}
+                                </span>
+                            </button>
+
+                            {/* Grid de imágenes condicional (Sólo si está activo) */}
+                            {isActive && (
+                                <div className="mt-6">
+                                    <MediaGrid items={media} emptyText="Este personaje no tiene multimedia." />
+                                </div>
+                            )}
+                        </div>
+                    );
+                })}
+            </div>
         </section>
     );
 }

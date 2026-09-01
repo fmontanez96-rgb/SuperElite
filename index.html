@@ -546,6 +546,33 @@
       border: none;
     }
 
+    /* Adaptación a celular para el Lightbox */
+    @media (max-width: 768px) {
+      .lightbox-header {
+        top: 10px;
+        right: 10px;
+      }
+      .lightbox-btn {
+        padding: 8px 12px;
+        font-size: 14px;
+      }
+      .lightbox-nav-btn {
+        padding: 10px 15px;
+        font-size: 20px;
+      }
+      .lightbox-prev { left: 10px; }
+      .lightbox-next { right: 10px; }
+      .lightbox-visor {
+        max-width: 100vw;
+        max-height: 100vh;
+      }
+      .lightbox-visor img, .lightbox-visor video, .lightbox-visor iframe {
+        max-width: 100vw;
+        max-height: 100vh;
+        border-radius: 0;
+      }
+    }
+
     /* --- ESTILOS DE ETIQUETAS MULTIMEDIA --- */
     .media-container {
       position: relative;
@@ -748,6 +775,33 @@
       object-fit: contain;
       border: none;
     }
+
+    /* Adaptación a celular para las Batallas */
+    @media (max-width: 768px) {
+      .esquina {
+        min-width: 100%;
+        padding: 15px;
+      }
+      .media-box-batalla {
+        height: 250px; /* Reduce la altura en celular para que quepa mejor todo el contenido */
+      }
+      .btn-batalla {
+        font-size: 16px;
+        padding: 8px 16px;
+      }
+      .vs-divider {
+        font-size: 20px;
+        padding: 5px;
+      }
+      .sector-selector {
+        flex-wrap: wrap;
+      }
+      .btn-sector {
+        font-size: 14px;
+        padding: 8px 16px;
+        flex: 1 1 40%; /* Hace que los botones se acomoden en cuadrícula */
+      }
+    }
     .controles-batalla {
       display: flex;
       gap: 12px;
@@ -843,6 +897,38 @@
     }
     .ranking-table tr:hover:not(.coronado) {
       background: #27272a;
+    }
+
+    /* Adaptación a celular para el Ranking y la Navegación */
+    @media (max-width: 768px) {
+      .ranking-table {
+        font-size: 12px;
+      }
+      .ranking-table th, .ranking-table td {
+        padding: 8px 6px; /* Espaciado más reducido */
+      }
+      .thumb-rank {
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+      }
+      .coronado td {
+        font-size: 13px;
+      }
+      .ranking-nav {
+        flex-wrap: wrap;
+      }
+      .btn-ranking {
+        flex: 1 1 40%;
+        font-size: 12px;
+        padding: 8px;
+      }
+      
+      /* Ajuste preventivo para la barra de navegación principal (Pestañas) */
+      .tab-btn {
+        padding: 10px 5px;
+        font-size: 13px;
+      }
     }
     .col-derecha { text-align: right !important; }
     .col-centro { text-align: center !important; }
@@ -1539,20 +1625,26 @@
 
       const item = galeriaActualItems[lightboxIndex];
 
-      if (item.tipo === "video") {
+      const esVideo = item.tipo === "video" || (item.url && item.url.match(/\.(mp4|webm|ogg)($|\?)/i));
+
+      if (esVideo) {
         const fileId = item.url.split('/d/')[1]?.split('/')[0] || item.url;
         
-        if (item.url.endsWith('.mp4') || item.url.endsWith('.webm')) {
+        if (item.url.match(/\.(mp4|webm|ogg)($|\?)/i)) {
           const videoEl = document.createElement('video');
           videoEl.src = item.url;
           videoEl.controls = true;
-          videoEl.autoplay = true;
+          
+          videoEl.autoplay = reproduciendoAuto; 
+          
           videoEl.style.maxHeight = "85vh";
           videoEl.style.maxWidth = "90vw";
 
           videoEl.onended = () => {
             if (reproduciendoAuto) {
-              navegarLightbox(1);
+              setTimeout(() => {
+                navegarLightbox(1);
+              }, 1000);
             }
           };
 
@@ -1565,12 +1657,6 @@
           iframe.allow = "autoplay; fullscreen";
           iframe.setAttribute("allowfullscreen", "true");
           visor.appendChild(iframe);
-
-          if (reproduciendoAuto) {
-            timerAuto = setTimeout(() => {
-              navegarLightbox(1);
-            }, 10000);
-          }
         }
       } else {
         const img = document.createElement('img');
@@ -1809,24 +1895,6 @@
       iniciarEnfrentamiento();
     }
 
-    function obtenerCandidatosBatalla() {
-      const modo = document.getElementById('batalla-modo') ? document.getElementById('batalla-modo').value : 'general';
-      const valorExtra = document.getElementById('batalla-valor-extra') ? document.getElementById('batalla-valor-extra').value : '';
-
-      return personajesData.filter(p => {
-        if (modo === 'general') return true;
-        if (modo === 'nacionalidad') return p.pais === valorExtra;
-        if (modo === 'grupo') return p.grupo === valorExtra;
-        if (modo === 'rango_edad') {
-           const edad = calcularEdad(p.fechaNacimiento);
-           if (valorExtra === '18-24') return edad >= 18 && edad <= 24;
-           if (valorExtra === '25-31') return edad >= 25 && edad <= 31;
-           if (valorExtra === '32-38') return edad >= 32 && edad <= 38;
-           if (valorExtra === '38-60') return edad >= 38 && edad <= 60;
-        }
-        return true;
-      });
-    }
 
     function inicializarFiltrosRanking() {
       const selGrupo = document.getElementById('ranking-filtro-grupo');
@@ -1901,9 +1969,42 @@ function obtenerSiguienteOponente(ganadorId, sector, candidatosPermitidos = pers
       if (candidatos.length === 0) return null;
       return candidatos[Math.floor(Math.random() * candidatos.length)].id;
     }
+function obtenerCandidatosBatalla() {
+      const modo = document.getElementById('batalla-modo') ? document.getElementById('batalla-modo').value : 'general';
+      const valorExtra = document.getElementById('batalla-valor-extra') ? document.getElementById('batalla-valor-extra').value : '';
+
+      return personajesData.filter(p => {
+        // Validar que el participante tenga contenido en la etiqueta (excepto sector R que usa foto de perfil)
+        if (sectorBatallaActual !== 'R') {
+          const tieneMedia = multimediaData.some(m => m.personajeId === p.id && (m.etiqueta || 'C') === sectorBatallaActual);
+          if (!tieneMedia) return false;
+        }
+
+        if (modo === 'general') return true;
+        if (modo === 'nacionalidad') return p.pais === valorExtra;
+        if (modo === 'grupo') return p.grupo === valorExtra;
+        if (modo === 'rango_edad') {
+           const edad = calcularEdad(p.fechaNacimiento);
+           if (valorExtra === '18-24') return edad >= 18 && edad <= 24;
+           if (valorExtra === '25-31') return edad >= 25 && edad <= 31;
+           if (valorExtra === '32-38') return edad >= 32 && edad <= 38;
+           if (valorExtra === '38-60') return edad >= 38 && edad <= 60;
+        }
+        return true;
+      });
+    }
 
     function iniciarEnfrentamiento(ganadorId = null, esquinaGanadora = null) {
       const candidatos = obtenerCandidatosBatalla();
+      
+      // Función interna para mostrar el mensaje de batallas finalizadas
+      const mostrarCompleto = () => {
+        document.getElementById('roja-nombre').innerHTML = "<span style='color: #22c55e;'>COMPLETO</span>";
+        document.getElementById('azul-nombre').innerHTML = "<span style='color: #22c55e;'>COMPLETO</span>";
+        document.getElementById('roja-media-box').innerHTML = "";
+        document.getElementById('azul-media-box').innerHTML = "";
+      };
+
       if (candidatos.length < 2) {
         document.getElementById('roja-nombre').innerText = "Sin oponentes";
         document.getElementById('azul-nombre').innerText = "Sin oponentes";
@@ -1912,8 +2013,10 @@ function obtenerSiguienteOponente(ganadorId, sector, candidatosPermitidos = pers
         return;
       }
 
+      let p1 = null, p2 = null;
+
       if (!ganadorId) {
-        let p1 = null, p2 = null;
+        // Si no hay un ganador previo, buscamos cualquier par libre
         for (let i = 0; i < candidatos.length; i++) {
           for (let j = i + 1; j < candidatos.length; j++) {
             if (!haEnfrentado(candidatos[i].id, candidatos[j].id, sectorBatallaActual)) {
@@ -1926,27 +2029,46 @@ function obtenerSiguienteOponente(ganadorId, sector, candidatosPermitidos = pers
         }
 
         if (!p1) {
-          participanteRojo = { id: candidatos[0].id, mediaIndex: 0 };
-          participanteAzul = { id: candidatos[1].id, mediaIndex: 0 };
+          return mostrarCompleto();
         } else {
           participanteRojo = { id: p1, mediaIndex: 0 };
           participanteAzul = { id: p2, mediaIndex: 0 };
         }
       } else {
         const nuevoOponenteId = obtenerSiguienteOponente(ganadorId, sectorBatallaActual, candidatos);
-        const oponenteFallback = nuevoOponenteId || candidatos.find(p => p.id !== ganadorId)?.id;
-
-        if (esquinaGanadora === 'roja') {
-          participanteRojo = { id: ganadorId, mediaIndex: 0 };
-          participanteAzul = { id: oponenteFallback, mediaIndex: 0 };
+        
+        if (nuevoOponenteId) {
+          // El ganador aún tiene oponentes disponibles
+          if (esquinaGanadora === 'roja') {
+            participanteRojo = { id: ganadorId, mediaIndex: 0 };
+            participanteAzul = { id: nuevoOponenteId, mediaIndex: 0 };
+          } else {
+            participanteAzul = { id: ganadorId, mediaIndex: 0 };
+            participanteRojo = { id: nuevoOponenteId, mediaIndex: 0 };
+          }
         } else {
-          participanteAzul = { id: ganadorId, mediaIndex: 0 };
-          participanteRojo = { id: oponenteFallback, mediaIndex: 0 };
+          // El ganador ya enfrentó a todos. Buscamos el siguiente encuentro disponible entre otros participantes
+          for (let i = 0; i < candidatos.length; i++) {
+            for (let j = i + 1; j < candidatos.length; j++) {
+              if (!haEnfrentado(candidatos[i].id, candidatos[j].id, sectorBatallaActual)) {
+                p1 = candidatos[i].id;
+                p2 = candidatos[j].id;
+                break;
+              }
+            }
+            if (p1) break;
+          }
+
+          if (!p1) {
+            return mostrarCompleto();
+          } else {
+            participanteRojo = { id: p1, mediaIndex: 0 };
+            participanteAzul = { id: p2, mediaIndex: 0 };
+          }
         }
       }
       renderizarBatalla();
     }
-
     function renderizarBatalla() {
       renderizarEsquina('roja', participanteRojo);
       renderizarEsquina('azul', participanteAzul);

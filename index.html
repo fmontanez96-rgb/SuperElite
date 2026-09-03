@@ -477,7 +477,7 @@
       position: fixed;
       top: 0; left: 0;
       width: 100vw; height: 100vh;
-      background-color: rgba(0, 0, 0, 0.95);
+      background-color: #000000;
       z-index: 500;
       flex-direction: column;
       justify-content: center;
@@ -488,86 +488,82 @@
     }
     .lightbox-header {
       position: absolute;
-      top: 15px;
-      right: 20px;
+      top: 10px;
+      right: 10px;
       display: flex;
-      gap: 10px;
+      gap: 5px;
       z-index: 510;
     }
     .lightbox-btn {
-      background: rgba(255, 255, 255, 0.2);
-      color: white;
-      border: none;
-      padding: 10px 16px;
-      border-radius: 6px;
+      background: rgba(0, 0, 0, 0.4);
+      color: rgba(255, 255, 255, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 4px 8px;
+      border-radius: 4px;
       cursor: pointer;
-      font-size: 16px;
-      font-weight: bold;
-      transition: background 0.2s;
+      font-size: 10px;
+      font-weight: normal;
+      transition: all 0.2s;
     }
     .lightbox-btn:hover {
-      background: rgba(255, 255, 255, 0.4);
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
     }
     .lightbox-btn-play.playing {
-      background: #22c55e;
+      background: rgba(34, 197, 94, 0.3);
     }
     .lightbox-nav-btn {
       position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: rgba(0, 0, 0, 0.5);
-      color: white;
+      bottom: 45px;
+      background: transparent;
+      color: rgba(255, 255, 255, 0.2);
       border: none;
-      font-size: 30px;
-      padding: 15px 20px;
+      font-size: 24px;
+      padding: 10px 20px;
       cursor: pointer;
-      border-radius: 8px;
       user-select: none;
       z-index: 510;
-      transition: background 0.2s;
+      transition: color 0.2s;
     }
     .lightbox-nav-btn:hover {
-      background: rgba(255, 255, 255, 0.3);
+      color: white;
     }
-    .lightbox-prev { left: 20px; }
-    .lightbox-next { right: 20px; }
+    .lightbox-prev { left: 30%; transform: translateX(-50%); }
+    .lightbox-next { right: 30%; transform: translateX(50%); }
     .lightbox-visor {
-      max-width: 90vw;
-      max-height: 85vh;
+      width: 100vw;
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
     }
     .lightbox-visor img, .lightbox-visor video, .lightbox-visor iframe {
-      max-width: 90vw;
-      max-height: 85vh;
+      width: 100vw;
+      height: 100vh;
       object-fit: contain;
-      border-radius: 8px;
+      border-radius: 0;
       border: none;
     }
 
     /* Adaptación a celular para el Lightbox */
-    /* Estilos responsivos */
     @media (max-width: 768px) {
-      nav { flex-direction: column; }
-      .tab-btn { padding: 10px; font-size: 14px; }
-
-      /* Video a pantalla completa en celulares */
-      .contenedor-video, .video-container, video, iframe {
-        width: 100% !important;
-        max-width: 100vw !important;
-        height: auto !important;
-        max-height: 80vh !important;
-        object-fit: contain;
-        margin: 0 auto;
-        display: block;
+      .lightbox-header {
+        top: 5px;
+        right: 5px;
       }
-
-      /* Quitar la barra/navegador gigante de controles sobre el video */
-      .controles-video, .player-controls, .video-overlay, .navegador-video, .controles {
-        display: none !important;
+      .lightbox-btn {
+        padding: 4px 6px;
+        font-size: 9px;
       }
+      .lightbox-nav-btn {
+        bottom: 50px;
+        font-size: 20px;
+        padding: 5px 10px;
+      }
+      .lightbox-prev { left: 20%; }
+      .lightbox-next { right: 20%; }
     }
+
     /* --- ESTILOS DE ETIQUETAS MULTIMEDIA --- */
     .media-container {
       position: relative;
@@ -1033,13 +1029,6 @@
       box-shadow: 0 0 5px rgba(0,0,0,0.5);
       border: none;
     }
-    @media (max-width: 600px) {
-  video {
-    width: 100vw !important;
-    height: calc(100vh - 60px) !important;
-    object-fit: cover !important;
-  }
-}
   </style>
 </head>
 <body>
@@ -1191,6 +1180,7 @@
         <button class="btn-ranking" onclick="cambiarRanking('B')">Etiqueta B</button>
         <button class="btn-ranking" onclick="cambiarRanking('P')">Etiqueta P</button>
         <button class="btn-ranking" onclick="cambiarRanking('R')">Etiqueta R</button>
+        <button class="btn-ranking" onclick="cambiarRanking('GENERAL_S')">Etiqueta General S</button>
         <button class="btn-ranking" onclick="cambiarRanking('GENERAL')">General (Promedio)</button>
       </div>
 
@@ -1638,8 +1628,10 @@
           
           videoEl.autoplay = reproduciendoAuto; 
           
-          videoEl.style.maxHeight = "85vh";
-          videoEl.style.maxWidth = "90vw";
+          videoEl.style.maxHeight = "100vh";
+          videoEl.style.maxWidth = "100vw";
+          videoEl.style.width = "100%";
+          videoEl.style.height = "100%";
 
           videoEl.onended = () => {
             if (reproduciendoAuto) {
@@ -1653,8 +1645,8 @@
         } else {
           const iframe = document.createElement('iframe');
           iframe.src = `https://drive.google.com/file/d/${fileId}/preview`;
-          iframe.style.width = "80vw";
-          iframe.style.height = "80vh";
+          iframe.style.width = "100vw";
+          iframe.style.height = "100vh";
           iframe.allow = "autoplay; fullscreen";
           iframe.setAttribute("allowfullscreen", "true");
           visor.appendChild(iframe);
@@ -2193,7 +2185,7 @@ function obtenerCandidatosBatalla() {
       ordenAsc = false;
       
       document.querySelectorAll('.btn-ranking').forEach(b => {
-        b.classList.toggle('active', b.innerText.includes(tipo === 'GENERAL' ? 'General' : tipo));
+        b.classList.toggle('active', b.getAttribute('onclick').includes(`'${tipo}'`));
       });
 
       calcularDatosRanking();
@@ -2258,27 +2250,43 @@ function calcularPuntajeSector(sector) {
         document.getElementById('contenedor-exacta').style.display = 'none';
       }
     }
-
-    function calcularDatosRanking() {
+function calcularDatosRanking() {
       let dataTemporal = [];
 
-      if (rankingActual === 'GENERAL') {
-        const pC = calcularPuntajeSector('C');
-        const pB = calcularPuntajeSector('B');
-        const pP = calcularPuntajeSector('P');
-        const pR = calcularPuntajeSector('R');
+      const pC = calcularPuntajeSector('C');
+      const pB = calcularPuntajeSector('B');
+      const pP = calcularPuntajeSector('P');
+      const pR = calcularPuntajeSector('R');
 
+      if (rankingActual === 'GENERAL' || rankingActual === 'GENERAL_S') {
         personajesData.forEach(p => {
-          let puntajesValidos = [];
-          if (pC[p.id] !== undefined) puntajesValidos.push(pC[p.id]);
-          if (pB[p.id] !== undefined) puntajesValidos.push(pB[p.id]);
-          if (pP[p.id] !== undefined) puntajesValidos.push(pP[p.id]);
-          if (pR[p.id] !== undefined) puntajesValidos.push(pR[p.id]);
+          // Etiqueta General S = (C + P + B) / 3
+          let puntajesCPB = [];
+          if (pC[p.id] !== undefined) puntajesCPB.push(pC[p.id]);
+          if (pP[p.id] !== undefined) puntajesCPB.push(pP[p.id]);
+          if (pB[p.id] !== undefined) puntajesCPB.push(pB[p.id]);
 
-          let promedio = null;
-          if (puntajesValidos.length > 0) {
-            let suma = puntajesValidos.reduce((a, b) => a + b, 0);
-            promedio = parseFloat((suma / puntajesValidos.length).toFixed(2));
+          let generalS = null;
+          if (puntajesCPB.length > 0) {
+            let sumaCPB = puntajesCPB.reduce((a, b) => a + b, 0);
+            generalS = parseFloat((sumaCPB / 3).toFixed(2));
+          }
+
+          let puntajeFinal = null;
+
+          if (rankingActual === 'GENERAL_S') {
+            puntajeFinal = generalS;
+          } else if (rankingActual === 'GENERAL') {
+            // Promedio General = (General S + Etiqueta R) / 2
+            let valR = pR[p.id];
+            let componentesGen = [];
+            if (generalS !== null) componentesGen.push(generalS);
+            if (valR !== undefined) componentesGen.push(valR);
+
+            if (componentesGen.length > 0) {
+              let sumaGen = componentesGen.reduce((a, b) => a + b, 0);
+              puntajeFinal = parseFloat((sumaGen / 2).toFixed(2));
+            }
           }
 
           dataTemporal.push({
@@ -2288,7 +2296,7 @@ function calcularPuntajeSector(sector) {
             ciudad: p.ciudad,
             edad: calcularEdad(p.fechaNacimiento),
             grupo: p.grupo,
-            puntaje: promedio
+            puntaje: puntajeFinal
           });
         });
       } else {
@@ -2366,8 +2374,7 @@ function calcularPuntajeSector(sector) {
         return;
       }
 
-      let isGeneral = rankingActual === 'GENERAL';
-
+let isGeneral = rankingActual === 'GENERAL' || rankingActual === 'GENERAL_S';
       let html = `<table class="ranking-table"><thead><tr>
         <th style="width: 60px;">#</th>
         <th onclick="clickCabecera('nombre')">Personaje ${ordenColumna==='nombre'?(ordenAsc?'▲':'▼'):''}</th>

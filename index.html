@@ -1692,6 +1692,30 @@
       }
     }
 
+    // --- LÓGICA DE SWIPE PARA MÓVILES EN LIGHTBOX ---
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    const modalLightbox = document.getElementById('modal-lightbox');
+
+    modalLightbox.addEventListener('touchstart', function(event) {
+      touchStartX = event.changedTouches[0].screenX;
+    }, { passive: true });
+
+    modalLightbox.addEventListener('touchend', function(event) {
+      touchEndX = event.changedTouches[0].screenX;
+      manejarSwipe();
+    }, { passive: true });
+
+    function manejarSwipe() {
+      const umbralSwipe = 50; 
+      if (touchEndX < touchStartX - umbralSwipe) {
+        navegarLightbox(1);
+      }
+      if (touchEndX > touchStartX + umbralSwipe) {
+        navegarLightbox(-1);
+      }
+    }
     // LÓGICA DE ETIQUETAS Y DESCARGA
     const ORDEN_ETIQUETAS = ['C', 'P', 'B', 'S', 'E', 'X'];
 

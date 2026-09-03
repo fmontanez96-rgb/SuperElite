@@ -360,16 +360,6 @@
     "estatura": "1.73 m"
   },
   {
-    "id": "hilaryduff",
-    "nombre": "Hilary Duff",
-    "imagen": "personajes/hilaryduff.jpg",
-    "grupo": "Actrices",
-    "pais": "Estados Unidos",
-    "ciudad": "Texas",
-    "fechaNacimiento": "1987-09-28",
-    "estatura": "1.57 m"
-  },
-  {
     "id": "eugeniasuarez",
     "nombre": "Eugenia Suárez",
     "imagen": "personajes/eugeniasuarez.jpg",
@@ -668,16 +658,6 @@
     "ciudad": "Ohio",
     "fechaNacimiento": "1996-09-13",
     "estatura": "1.68 m"
-  },
-  {
-    "id": "kristenbell",
-    "nombre": "Kristen Bell",
-    "imagen": "personajes/kristenbell.jpg",
-    "grupo": "Actrices",
-    "pais": "Estados Unidos",
-    "ciudad": "Michigan",
-    "fechaNacimiento": "1980-07-18",
-    "estatura": "1.55 m"
   },
   {
     "id": "mayahawke",

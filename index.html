@@ -547,32 +547,27 @@
     }
 
     /* Adaptación a celular para el Lightbox */
+    /* Estilos responsivos */
     @media (max-width: 768px) {
-      .lightbox-header {
-        top: 10px;
-        right: 10px;
+      nav { flex-direction: column; }
+      .tab-btn { padding: 10px; font-size: 14px; }
+
+      /* Video a pantalla completa en celulares */
+      .contenedor-video, .video-container, video, iframe {
+        width: 100% !important;
+        max-width: 100vw !important;
+        height: auto !important;
+        max-height: 80vh !important;
+        object-fit: contain;
+        margin: 0 auto;
+        display: block;
       }
-      .lightbox-btn {
-        padding: 8px 12px;
-        font-size: 14px;
-      }
-      .lightbox-nav-btn {
-        padding: 10px 15px;
-        font-size: 20px;
-      }
-      .lightbox-prev { left: 10px; }
-      .lightbox-next { right: 10px; }
-      .lightbox-visor {
-        max-width: 100vw;
-        max-height: 100vh;
-      }
-      .lightbox-visor img, .lightbox-visor video, .lightbox-visor iframe {
-        max-width: 100vw;
-        max-height: 100vh;
-        border-radius: 0;
+
+      /* Quitar la barra/navegador gigante de controles sobre el video */
+      .controles-video, .player-controls, .video-overlay, .navegador-video, .controles {
+        display: none !important;
       }
     }
-
     /* --- ESTILOS DE ETIQUETAS MULTIMEDIA --- */
     .media-container {
       position: relative;
@@ -1038,6 +1033,13 @@
       box-shadow: 0 0 5px rgba(0,0,0,0.5);
       border: none;
     }
+    @media (max-width: 600px) {
+  video {
+    width: 100vw !important;
+    height: calc(100vh - 60px) !important;
+    object-fit: cover !important;
+  }
+}
   </style>
 </head>
 <body>
@@ -1603,7 +1605,6 @@
       document.getElementById('pantalla-personaje').style.display = 'none';
     }
 
-    // Funciones del Modal Lightbox Pantalla Completa
     function abrirLightbox(index) {
       lightboxIndex = index;
       document.getElementById('modal-lightbox').classList.add('active');
@@ -2198,13 +2199,16 @@ function obtenerCandidatosBatalla() {
       calcularDatosRanking();
       renderizarTablaRanking();
     }
+function calcularPuntajeSector(sector) {
+      let personajesConBatallas = personajesData.filter(p => 
+        batallasData.some(b => b.tag === sector && (b.ganadorId === p.id || b.perdedorId === p.id))
+      );
 
-    function calcularPuntajeSector(sector) {
-      const N = personajesData.length;
+      const N = personajesConBatallas.length;
       if (N === 0) return {};
 
       let victoriasPorPersonaje = {};
-      personajesData.forEach(p => victoriasPorPersonaje[p.id] = 0);
+      personajesConBatallas.forEach(p => victoriasPorPersonaje[p.id] = 0);
 
       batallasData.forEach(b => {
         if (b.tag === sector && victoriasPorPersonaje[b.ganadorId] !== undefined) {
@@ -2212,7 +2216,7 @@ function obtenerCandidatosBatalla() {
         }
       });
 
-      let ordenados = [...personajesData].sort((a, b) => {
+      let ordenados = [...personajesConBatallas].sort((a, b) => {
         return victoriasPorPersonaje[b.id] - victoriasPorPersonaje[a.id];
       });
 
@@ -2226,6 +2230,7 @@ function obtenerCandidatosBatalla() {
 
       return puntajes;
     }
+
     function validarRangoEdad(cambiado) {
       let min = parseInt(document.getElementById('ranking-filtro-edad-min').value);
       let max = parseInt(document.getElementById('ranking-filtro-edad-max').value);
@@ -2253,7 +2258,8 @@ function obtenerCandidatosBatalla() {
         document.getElementById('contenedor-exacta').style.display = 'none';
       }
     }
-function calcularDatosRanking() {
+
+    function calcularDatosRanking() {
       let dataTemporal = [];
 
       if (rankingActual === 'GENERAL') {
@@ -2263,8 +2269,18 @@ function calcularDatosRanking() {
         const pR = calcularPuntajeSector('R');
 
         personajesData.forEach(p => {
-          let sum = (pC[p.id] || 0) + (pB[p.id] || 0) + (pP[p.id] || 0) + (pR[p.id] || 0);
-          let promedio = sum / 4;
+          let puntajesValidos = [];
+          if (pC[p.id] !== undefined) puntajesValidos.push(pC[p.id]);
+          if (pB[p.id] !== undefined) puntajesValidos.push(pB[p.id]);
+          if (pP[p.id] !== undefined) puntajesValidos.push(pP[p.id]);
+          if (pR[p.id] !== undefined) puntajesValidos.push(pR[p.id]);
+
+          let promedio = null;
+          if (puntajesValidos.length > 0) {
+            let suma = puntajesValidos.reduce((a, b) => a + b, 0);
+            promedio = parseFloat((suma / puntajesValidos.length).toFixed(2));
+          }
+
           dataTemporal.push({
             id: p.id,
             nombre: p.nombre,
@@ -2272,7 +2288,7 @@ function calcularDatosRanking() {
             ciudad: p.ciudad,
             edad: calcularEdad(p.fechaNacimiento),
             grupo: p.grupo,
-            puntaje: parseFloat(promedio.toFixed(2))
+            puntaje: promedio
           });
         });
       } else {
@@ -2285,7 +2301,7 @@ function calcularDatosRanking() {
             ciudad: p.ciudad,
             edad: calcularEdad(p.fechaNacimiento),
             grupo: p.grupo,
-            puntaje: puntajes[p.id] || 0
+            puntaje: puntajes[p.id] !== undefined ? puntajes[p.id] : null
           });
         });
       }
@@ -2317,6 +2333,13 @@ function calcularDatosRanking() {
       rankingDataActual.sort((a, b) => {
         let valA = a[col];
         let valB = b[col];
+
+        if (col === 'puntaje') {
+          if (valA === null && valB === null) return 0;
+          if (valA === null) return 1;
+          if (valB === null) return -1;
+          return asc ? valA - valB : valB - valA;
+        }
 
         if (typeof valA === 'string') {
           return asc ? valA.localeCompare(valB) : valB.localeCompare(valA);
@@ -2387,7 +2410,7 @@ function calcularDatosRanking() {
           `;
         }
 
-        html += `<td class="col-derecha" style="font-weight: 900; font-size: 16px;">${p.puntaje}</td></tr>`;
+        html += `<td class="col-derecha" style="font-weight: 900; font-size: 16px;">${p.puntaje !== null ? p.puntaje : '-'}</td></tr>`;
       });
 
       html += `</tbody></table>`;

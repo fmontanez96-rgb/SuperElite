@@ -1,3 +1,2690 @@
 [
-  
+  {
+    "id": "1788446965934obba",
+    "tag": "C",
+    "ganadorId": "dualipa",
+    "perdedorId": "arianagrande",
+    "fecha": "2026-09-03T14:49:25.934Z"
+  },
+  {
+    "id": "17884469684407jwo",
+    "tag": "C",
+    "ganadorId": "beckyg",
+    "perdedorId": "dualipa",
+    "fecha": "2026-09-03T14:49:28.441Z"
+  },
+  {
+    "id": "1788446968441k0gz",
+    "tag": "C",
+    "ganadorId": "beckyg",
+    "perdedorId": "arianagrande",
+    "auto": true,
+    "fecha": "2026-09-03T14:49:28.441Z"
+  },
+  {
+    "id": "1788446970614ggj0",
+    "tag": "C",
+    "ganadorId": "beckyg",
+    "perdedorId": "angelatorres",
+    "fecha": "2026-09-03T14:49:30.614Z"
+  },
+  {
+    "id": "1788446972782raw7",
+    "tag": "C",
+    "ganadorId": "beckyg",
+    "perdedorId": "aitana",
+    "fecha": "2026-09-03T14:49:32.782Z"
+  },
+  {
+    "id": "17884469740077y6j",
+    "tag": "C",
+    "ganadorId": "beckyg",
+    "perdedorId": "anadearmas",
+    "fecha": "2026-09-03T14:49:34.007Z"
+  },
+  {
+    "id": "17884469756392hjr",
+    "tag": "C",
+    "ganadorId": "beckyg",
+    "perdedorId": "claragalle",
+    "fecha": "2026-09-03T14:49:35.639Z"
+  },
+  {
+    "id": "17884469767343zpg",
+    "tag": "C",
+    "ganadorId": "beckyg",
+    "perdedorId": "avrillavigne",
+    "fecha": "2026-09-03T14:49:36.734Z"
+  },
+  {
+    "id": "17884469780943ugn",
+    "tag": "C",
+    "ganadorId": "beckyg",
+    "perdedorId": "claraceschin",
+    "fecha": "2026-09-03T14:49:38.094Z"
+  },
+  {
+    "id": "1788446983830riga",
+    "tag": "C",
+    "ganadorId": "beckyg",
+    "perdedorId": "emiliamernes",
+    "fecha": "2026-09-03T14:49:43.830Z"
+  },
+  {
+    "id": "1788447004071qugh",
+    "tag": "C",
+    "ganadorId": "beckyg",
+    "perdedorId": "nickinicole",
+    "fecha": "2026-09-03T14:50:04.071Z"
+  },
+  {
+    "id": "1788447005638r9qm",
+    "tag": "C",
+    "ganadorId": "beckyg",
+    "perdedorId": "esterexposito",
+    "fecha": "2026-09-03T14:50:05.638Z"
+  },
+  {
+    "id": "17884470072069206",
+    "tag": "C",
+    "ganadorId": "beckyg",
+    "perdedorId": "anamena",
+    "fecha": "2026-09-03T14:50:07.206Z"
+  },
+  {
+    "id": "1788447008943awv6",
+    "tag": "C",
+    "ganadorId": "beckyg",
+    "perdedorId": "sabrinacarpenter",
+    "fecha": "2026-09-03T14:50:08.943Z"
+  },
+  {
+    "id": "1788447009942778s",
+    "tag": "C",
+    "ganadorId": "beckyg",
+    "perdedorId": "sidneysweeney",
+    "fecha": "2026-09-03T14:50:09.942Z"
+  },
+  {
+    "id": "17884470122373b6o",
+    "tag": "C",
+    "ganadorId": "beckyg",
+    "perdedorId": "oliviarodrigo",
+    "fecha": "2026-09-03T14:50:12.238Z"
+  },
+  {
+    "id": "1788447015038figg",
+    "tag": "C",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "dualipa",
+    "fecha": "2026-09-03T14:50:15.038Z"
+  },
+  {
+    "id": "1788447015038d5ic",
+    "tag": "C",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "arianagrande",
+    "auto": true,
+    "fecha": "2026-09-03T14:50:15.038Z"
+  },
+  {
+    "id": "1788447015911p6e0",
+    "tag": "C",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "anamena",
+    "fecha": "2026-09-03T14:50:15.911Z"
+  },
+  {
+    "id": "1788447017286k6g3",
+    "tag": "C",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "oliviarodrigo",
+    "fecha": "2026-09-03T14:50:17.286Z"
+  },
+  {
+    "id": "1788447018166tgmv",
+    "tag": "C",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "nickinicole",
+    "fecha": "2026-09-03T14:50:18.166Z"
+  },
+  {
+    "id": "1788447019014stxq",
+    "tag": "C",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "avrillavigne",
+    "fecha": "2026-09-03T14:50:19.014Z"
+  },
+  {
+    "id": "1788447043272y2vd",
+    "tag": "C",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "claragalle",
+    "fecha": "2026-09-03T14:50:43.272Z"
+  },
+  {
+    "id": "178844704498269uh",
+    "tag": "C",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "claraceschin",
+    "fecha": "2026-09-03T14:50:44.982Z"
+  },
+  {
+    "id": "17884470457903krx",
+    "tag": "C",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "anadearmas",
+    "fecha": "2026-09-03T14:50:45.790Z"
+  },
+  {
+    "id": "1788447046998cpk0",
+    "tag": "C",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "esterexposito",
+    "fecha": "2026-09-03T14:50:46.998Z"
+  },
+  {
+    "id": "1788447047910bfaf",
+    "tag": "C",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "sidneysweeney",
+    "fecha": "2026-09-03T14:50:47.910Z"
+  },
+  {
+    "id": "1788447079014tbyp",
+    "tag": "C",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "sabrinacarpenter",
+    "fecha": "2026-09-03T14:51:19.014Z"
+  },
+  {
+    "id": "17884470809359kvd",
+    "tag": "C",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "angelatorres",
+    "fecha": "2026-09-03T14:51:20.935Z"
+  },
+  {
+    "id": "17884470837022ydq",
+    "tag": "C",
+    "ganadorId": "aitana",
+    "perdedorId": "emiliamernes",
+    "fecha": "2026-09-03T14:51:23.702Z"
+  },
+  {
+    "id": "17884470837028t2c",
+    "tag": "C",
+    "ganadorId": "aitana",
+    "perdedorId": "dualipa",
+    "auto": true,
+    "fecha": "2026-09-03T14:51:23.702Z"
+  },
+  {
+    "id": "1788447083702ln28",
+    "tag": "C",
+    "ganadorId": "aitana",
+    "perdedorId": "arianagrande",
+    "auto": true,
+    "fecha": "2026-09-03T14:51:23.702Z"
+  },
+  {
+    "id": "17884470837026vrz",
+    "tag": "C",
+    "ganadorId": "aitana",
+    "perdedorId": "anamena",
+    "auto": true,
+    "fecha": "2026-09-03T14:51:23.702Z"
+  },
+  {
+    "id": "1788447083702ke67",
+    "tag": "C",
+    "ganadorId": "aitana",
+    "perdedorId": "oliviarodrigo",
+    "auto": true,
+    "fecha": "2026-09-03T14:51:23.702Z"
+  },
+  {
+    "id": "1788447083702wp1f",
+    "tag": "C",
+    "ganadorId": "aitana",
+    "perdedorId": "nickinicole",
+    "auto": true,
+    "fecha": "2026-09-03T14:51:23.702Z"
+  },
+  {
+    "id": "1788447083702wwab",
+    "tag": "C",
+    "ganadorId": "aitana",
+    "perdedorId": "avrillavigne",
+    "auto": true,
+    "fecha": "2026-09-03T14:51:23.702Z"
+  },
+  {
+    "id": "1788447083702kfh8",
+    "tag": "C",
+    "ganadorId": "aitana",
+    "perdedorId": "claragalle",
+    "auto": true,
+    "fecha": "2026-09-03T14:51:23.702Z"
+  },
+  {
+    "id": "17884470837027o54",
+    "tag": "C",
+    "ganadorId": "aitana",
+    "perdedorId": "claraceschin",
+    "auto": true,
+    "fecha": "2026-09-03T14:51:23.702Z"
+  },
+  {
+    "id": "1788447083702btdn",
+    "tag": "C",
+    "ganadorId": "aitana",
+    "perdedorId": "anadearmas",
+    "auto": true,
+    "fecha": "2026-09-03T14:51:23.702Z"
+  },
+  {
+    "id": "1788447083702rgza",
+    "tag": "C",
+    "ganadorId": "aitana",
+    "perdedorId": "esterexposito",
+    "auto": true,
+    "fecha": "2026-09-03T14:51:23.702Z"
+  },
+  {
+    "id": "17884470837020yjs",
+    "tag": "C",
+    "ganadorId": "aitana",
+    "perdedorId": "sidneysweeney",
+    "auto": true,
+    "fecha": "2026-09-03T14:51:23.702Z"
+  },
+  {
+    "id": "1788447083702esnl",
+    "tag": "C",
+    "ganadorId": "aitana",
+    "perdedorId": "sabrinacarpenter",
+    "auto": true,
+    "fecha": "2026-09-03T14:51:23.702Z"
+  },
+  {
+    "id": "1788447083702vrai",
+    "tag": "C",
+    "ganadorId": "aitana",
+    "perdedorId": "angelatorres",
+    "auto": true,
+    "fecha": "2026-09-03T14:51:23.702Z"
+  },
+  {
+    "id": "1788447104110cz8o",
+    "tag": "C",
+    "ganadorId": "nickinicole",
+    "perdedorId": "dualipa",
+    "fecha": "2026-09-03T14:51:44.110Z"
+  },
+  {
+    "id": "1788447104110ik4g",
+    "tag": "C",
+    "ganadorId": "nickinicole",
+    "perdedorId": "arianagrande",
+    "auto": true,
+    "fecha": "2026-09-03T14:51:44.110Z"
+  },
+  {
+    "id": "17884471055107cxm",
+    "tag": "C",
+    "ganadorId": "nickinicole",
+    "perdedorId": "avrillavigne",
+    "fecha": "2026-09-03T14:51:45.510Z"
+  },
+  {
+    "id": "1788447107214lh90",
+    "tag": "C",
+    "ganadorId": "angelatorres",
+    "perdedorId": "nickinicole",
+    "fecha": "2026-09-03T14:51:47.214Z"
+  },
+  {
+    "id": "1788447107214xgo1",
+    "tag": "C",
+    "ganadorId": "angelatorres",
+    "perdedorId": "dualipa",
+    "auto": true,
+    "fecha": "2026-09-03T14:51:47.214Z"
+  },
+  {
+    "id": "1788447107214anow",
+    "tag": "C",
+    "ganadorId": "angelatorres",
+    "perdedorId": "arianagrande",
+    "auto": true,
+    "fecha": "2026-09-03T14:51:47.214Z"
+  },
+  {
+    "id": "1788447107214xmqf",
+    "tag": "C",
+    "ganadorId": "angelatorres",
+    "perdedorId": "avrillavigne",
+    "auto": true,
+    "fecha": "2026-09-03T14:51:47.214Z"
+  },
+  {
+    "id": "1788447109094y9mu",
+    "tag": "C",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "angelatorres",
+    "fecha": "2026-09-03T14:51:49.094Z"
+  },
+  {
+    "id": "1788447109094x8yh",
+    "tag": "C",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "nickinicole",
+    "auto": true,
+    "fecha": "2026-09-03T14:51:49.094Z"
+  },
+  {
+    "id": "178844710909411jy",
+    "tag": "C",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "dualipa",
+    "auto": true,
+    "fecha": "2026-09-03T14:51:49.094Z"
+  },
+  {
+    "id": "17884471090946dog",
+    "tag": "C",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "arianagrande",
+    "auto": true,
+    "fecha": "2026-09-03T14:51:49.094Z"
+  },
+  {
+    "id": "1788447109094g49q",
+    "tag": "C",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "avrillavigne",
+    "auto": true,
+    "fecha": "2026-09-03T14:51:49.094Z"
+  },
+  {
+    "id": "1788447110142mcsg",
+    "tag": "C",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "oliviarodrigo",
+    "fecha": "2026-09-03T14:51:50.142Z"
+  },
+  {
+    "id": "1788447111114a7sa",
+    "tag": "C",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "anamena",
+    "fecha": "2026-09-03T14:51:51.114Z"
+  },
+  {
+    "id": "1788447112127yz61",
+    "tag": "C",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "anadearmas",
+    "fecha": "2026-09-03T14:51:52.127Z"
+  },
+  {
+    "id": "17884471130301fhv",
+    "tag": "C",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "claraceschin",
+    "fecha": "2026-09-03T14:51:53.030Z"
+  },
+  {
+    "id": "1788447120910qjgu",
+    "tag": "C",
+    "ganadorId": "esterexposito",
+    "perdedorId": "sidneysweeney",
+    "fecha": "2026-09-03T14:52:00.910Z"
+  },
+  {
+    "id": "1788447120910ukct",
+    "tag": "C",
+    "ganadorId": "esterexposito",
+    "perdedorId": "angelatorres",
+    "auto": true,
+    "fecha": "2026-09-03T14:52:00.910Z"
+  },
+  {
+    "id": "17884471209106qod",
+    "tag": "C",
+    "ganadorId": "esterexposito",
+    "perdedorId": "nickinicole",
+    "auto": true,
+    "fecha": "2026-09-03T14:52:00.910Z"
+  },
+  {
+    "id": "1788447120910vk5a",
+    "tag": "C",
+    "ganadorId": "esterexposito",
+    "perdedorId": "dualipa",
+    "auto": true,
+    "fecha": "2026-09-03T14:52:00.910Z"
+  },
+  {
+    "id": "1788447120910ogm4",
+    "tag": "C",
+    "ganadorId": "esterexposito",
+    "perdedorId": "arianagrande",
+    "auto": true,
+    "fecha": "2026-09-03T14:52:00.910Z"
+  },
+  {
+    "id": "1788447120910syy9",
+    "tag": "C",
+    "ganadorId": "esterexposito",
+    "perdedorId": "avrillavigne",
+    "auto": true,
+    "fecha": "2026-09-03T14:52:00.910Z"
+  },
+  {
+    "id": "1788447120910fymo",
+    "tag": "C",
+    "ganadorId": "esterexposito",
+    "perdedorId": "oliviarodrigo",
+    "auto": true,
+    "fecha": "2026-09-03T14:52:00.910Z"
+  },
+  {
+    "id": "1788447120911pjzz",
+    "tag": "C",
+    "ganadorId": "esterexposito",
+    "perdedorId": "anamena",
+    "auto": true,
+    "fecha": "2026-09-03T14:52:00.911Z"
+  },
+  {
+    "id": "1788447120911gpu1",
+    "tag": "C",
+    "ganadorId": "esterexposito",
+    "perdedorId": "anadearmas",
+    "auto": true,
+    "fecha": "2026-09-03T14:52:00.911Z"
+  },
+  {
+    "id": "1788447120911knwt",
+    "tag": "C",
+    "ganadorId": "esterexposito",
+    "perdedorId": "claraceschin",
+    "auto": true,
+    "fecha": "2026-09-03T14:52:00.911Z"
+  },
+  {
+    "id": "1788447122582smro",
+    "tag": "C",
+    "ganadorId": "claragalle",
+    "perdedorId": "esterexposito",
+    "fecha": "2026-09-03T14:52:02.582Z"
+  },
+  {
+    "id": "1788447122583gd3f",
+    "tag": "C",
+    "ganadorId": "claragalle",
+    "perdedorId": "sidneysweeney",
+    "auto": true,
+    "fecha": "2026-09-03T14:52:02.583Z"
+  },
+  {
+    "id": "1788447122583l98y",
+    "tag": "C",
+    "ganadorId": "claragalle",
+    "perdedorId": "angelatorres",
+    "auto": true,
+    "fecha": "2026-09-03T14:52:02.583Z"
+  },
+  {
+    "id": "1788447122583iai2",
+    "tag": "C",
+    "ganadorId": "claragalle",
+    "perdedorId": "nickinicole",
+    "auto": true,
+    "fecha": "2026-09-03T14:52:02.583Z"
+  },
+  {
+    "id": "1788447122583u7xu",
+    "tag": "C",
+    "ganadorId": "claragalle",
+    "perdedorId": "dualipa",
+    "auto": true,
+    "fecha": "2026-09-03T14:52:02.583Z"
+  },
+  {
+    "id": "1788447122583a9s5",
+    "tag": "C",
+    "ganadorId": "claragalle",
+    "perdedorId": "arianagrande",
+    "auto": true,
+    "fecha": "2026-09-03T14:52:02.583Z"
+  },
+  {
+    "id": "1788447122583wzrm",
+    "tag": "C",
+    "ganadorId": "claragalle",
+    "perdedorId": "avrillavigne",
+    "auto": true,
+    "fecha": "2026-09-03T14:52:02.583Z"
+  },
+  {
+    "id": "178844712258355u1",
+    "tag": "C",
+    "ganadorId": "claragalle",
+    "perdedorId": "oliviarodrigo",
+    "auto": true,
+    "fecha": "2026-09-03T14:52:02.583Z"
+  },
+  {
+    "id": "1788447122583hzfx",
+    "tag": "C",
+    "ganadorId": "claragalle",
+    "perdedorId": "anamena",
+    "auto": true,
+    "fecha": "2026-09-03T14:52:02.583Z"
+  },
+  {
+    "id": "1788447122583yhp2",
+    "tag": "C",
+    "ganadorId": "claragalle",
+    "perdedorId": "anadearmas",
+    "auto": true,
+    "fecha": "2026-09-03T14:52:02.583Z"
+  },
+  {
+    "id": "1788447122583xmz4",
+    "tag": "C",
+    "ganadorId": "claragalle",
+    "perdedorId": "claraceschin",
+    "auto": true,
+    "fecha": "2026-09-03T14:52:02.583Z"
+  },
+  {
+    "id": "1788447155680vz20",
+    "tag": "C",
+    "ganadorId": "claragalle",
+    "perdedorId": "sabrinacarpenter",
+    "fecha": "2026-09-03T14:52:35.680Z"
+  },
+  {
+    "id": "1788447158254tmzm",
+    "tag": "C",
+    "ganadorId": "dualipa",
+    "perdedorId": "avrillavigne",
+    "fecha": "2026-09-03T14:52:38.254Z"
+  },
+  {
+    "id": "1788447162174exhs",
+    "tag": "C",
+    "ganadorId": "dualipa",
+    "perdedorId": "anamena",
+    "fecha": "2026-09-03T14:52:42.174Z"
+  },
+  {
+    "id": "1788447162174b208",
+    "tag": "C",
+    "ganadorId": "nickinicole",
+    "perdedorId": "anamena",
+    "auto": true,
+    "fecha": "2026-09-03T14:52:42.174Z"
+  },
+  {
+    "id": "1788447162177e8l8",
+    "tag": "C",
+    "ganadorId": "angelatorres",
+    "perdedorId": "anamena",
+    "auto": true,
+    "fecha": "2026-09-03T14:52:42.177Z"
+  },
+  {
+    "id": "1788447163470lxd6",
+    "tag": "C",
+    "ganadorId": "dualipa",
+    "perdedorId": "claraceschin",
+    "fecha": "2026-09-03T14:52:43.470Z"
+  },
+  {
+    "id": "1788447163470zo6r",
+    "tag": "C",
+    "ganadorId": "nickinicole",
+    "perdedorId": "claraceschin",
+    "auto": true,
+    "fecha": "2026-09-03T14:52:43.470Z"
+  },
+  {
+    "id": "1788447163470re8n",
+    "tag": "C",
+    "ganadorId": "angelatorres",
+    "perdedorId": "claraceschin",
+    "auto": true,
+    "fecha": "2026-09-03T14:52:43.470Z"
+  },
+  {
+    "id": "17884471651187lps",
+    "tag": "C",
+    "ganadorId": "sabrinacarpenter",
+    "perdedorId": "dualipa",
+    "fecha": "2026-09-03T14:52:45.118Z"
+  },
+  {
+    "id": "1788447165118pek8",
+    "tag": "C",
+    "ganadorId": "sabrinacarpenter",
+    "perdedorId": "arianagrande",
+    "auto": true,
+    "fecha": "2026-09-03T14:52:45.118Z"
+  },
+  {
+    "id": "1788447165118sge8",
+    "tag": "C",
+    "ganadorId": "sabrinacarpenter",
+    "perdedorId": "avrillavigne",
+    "auto": true,
+    "fecha": "2026-09-03T14:52:45.118Z"
+  },
+  {
+    "id": "1788447165118zpvg",
+    "tag": "C",
+    "ganadorId": "sabrinacarpenter",
+    "perdedorId": "anamena",
+    "auto": true,
+    "fecha": "2026-09-03T14:52:45.118Z"
+  },
+  {
+    "id": "17884471651187zs8",
+    "tag": "C",
+    "ganadorId": "sabrinacarpenter",
+    "perdedorId": "claraceschin",
+    "auto": true,
+    "fecha": "2026-09-03T14:52:45.118Z"
+  },
+  {
+    "id": "1788447172960ixpe",
+    "tag": "C",
+    "ganadorId": "sabrinacarpenter",
+    "perdedorId": "sidneysweeney",
+    "fecha": "2026-09-03T14:52:52.960Z"
+  },
+  {
+    "id": "17884471729614lvw",
+    "tag": "C",
+    "ganadorId": "sabrinacarpenter",
+    "perdedorId": "angelatorres",
+    "auto": true,
+    "fecha": "2026-09-03T14:52:52.961Z"
+  },
+  {
+    "id": "17884471729615s55",
+    "tag": "C",
+    "ganadorId": "sabrinacarpenter",
+    "perdedorId": "nickinicole",
+    "auto": true,
+    "fecha": "2026-09-03T14:52:52.961Z"
+  },
+  {
+    "id": "17884471729610le2",
+    "tag": "C",
+    "ganadorId": "sabrinacarpenter",
+    "perdedorId": "oliviarodrigo",
+    "auto": true,
+    "fecha": "2026-09-03T14:52:52.961Z"
+  },
+  {
+    "id": "1788447172961muz4",
+    "tag": "C",
+    "ganadorId": "sabrinacarpenter",
+    "perdedorId": "anadearmas",
+    "auto": true,
+    "fecha": "2026-09-03T14:52:52.961Z"
+  },
+  {
+    "id": "1788447174238yfaw",
+    "tag": "C",
+    "ganadorId": "esterexposito",
+    "perdedorId": "sabrinacarpenter",
+    "fecha": "2026-09-03T14:52:54.238Z"
+  },
+  {
+    "id": "1788447179366soee",
+    "tag": "C",
+    "ganadorId": "dualipa",
+    "perdedorId": "anadearmas",
+    "fecha": "2026-09-03T14:52:59.366Z"
+  },
+  {
+    "id": "1788447179366komj",
+    "tag": "C",
+    "ganadorId": "nickinicole",
+    "perdedorId": "anadearmas",
+    "auto": true,
+    "fecha": "2026-09-03T14:52:59.366Z"
+  },
+  {
+    "id": "17884471793679he6",
+    "tag": "C",
+    "ganadorId": "angelatorres",
+    "perdedorId": "anadearmas",
+    "auto": true,
+    "fecha": "2026-09-03T14:52:59.367Z"
+  },
+  {
+    "id": "1788447180423xcba",
+    "tag": "C",
+    "ganadorId": "dualipa",
+    "perdedorId": "oliviarodrigo",
+    "fecha": "2026-09-03T14:53:00.423Z"
+  },
+  {
+    "id": "1788447180423cvom",
+    "tag": "C",
+    "ganadorId": "nickinicole",
+    "perdedorId": "oliviarodrigo",
+    "auto": true,
+    "fecha": "2026-09-03T14:53:00.423Z"
+  },
+  {
+    "id": "1788447180424no58",
+    "tag": "C",
+    "ganadorId": "angelatorres",
+    "perdedorId": "oliviarodrigo",
+    "auto": true,
+    "fecha": "2026-09-03T14:53:00.424Z"
+  },
+  {
+    "id": "1788447187118okii",
+    "tag": "C",
+    "ganadorId": "arianagrande",
+    "perdedorId": "avrillavigne",
+    "fecha": "2026-09-03T14:53:07.118Z"
+  },
+  {
+    "id": "1788447191246cx4z",
+    "tag": "C",
+    "ganadorId": "arianagrande",
+    "perdedorId": "claraceschin",
+    "fecha": "2026-09-03T14:53:11.246Z"
+  },
+  {
+    "id": "1788447195942w18e",
+    "tag": "C",
+    "ganadorId": "arianagrande",
+    "perdedorId": "anadearmas",
+    "fecha": "2026-09-03T14:53:15.942Z"
+  },
+  {
+    "id": "1788447197272prcu",
+    "tag": "C",
+    "ganadorId": "arianagrande",
+    "perdedorId": "oliviarodrigo",
+    "fecha": "2026-09-03T14:53:17.272Z"
+  },
+  {
+    "id": "1788447198614v4a0",
+    "tag": "C",
+    "ganadorId": "arianagrande",
+    "perdedorId": "anamena",
+    "fecha": "2026-09-03T14:53:18.614Z"
+  },
+  {
+    "id": "1788447203622zb06",
+    "tag": "C",
+    "ganadorId": "anamena",
+    "perdedorId": "avrillavigne",
+    "fecha": "2026-09-03T14:53:23.622Z"
+  },
+  {
+    "id": "1788447212662kb0j",
+    "tag": "C",
+    "ganadorId": "anamena",
+    "perdedorId": "claraceschin",
+    "fecha": "2026-09-03T14:53:32.662Z"
+  },
+  {
+    "id": "17884472171580zkq",
+    "tag": "C",
+    "ganadorId": "anamena",
+    "perdedorId": "oliviarodrigo",
+    "fecha": "2026-09-03T14:53:37.158Z"
+  },
+  {
+    "id": "1788447218518mrbp",
+    "tag": "C",
+    "ganadorId": "anadearmas",
+    "perdedorId": "anamena",
+    "fecha": "2026-09-03T14:53:38.518Z"
+  },
+  {
+    "id": "1788447218518ht8u",
+    "tag": "C",
+    "ganadorId": "anadearmas",
+    "perdedorId": "avrillavigne",
+    "auto": true,
+    "fecha": "2026-09-03T14:53:38.518Z"
+  },
+  {
+    "id": "1788447218518mm9n",
+    "tag": "C",
+    "ganadorId": "anadearmas",
+    "perdedorId": "claraceschin",
+    "auto": true,
+    "fecha": "2026-09-03T14:53:38.518Z"
+  },
+  {
+    "id": "17884472185187erl",
+    "tag": "C",
+    "ganadorId": "anadearmas",
+    "perdedorId": "oliviarodrigo",
+    "auto": true,
+    "fecha": "2026-09-03T14:53:38.518Z"
+  },
+  {
+    "id": "17884472220226t65",
+    "tag": "C",
+    "ganadorId": "avrillavigne",
+    "perdedorId": "oliviarodrigo",
+    "fecha": "2026-09-03T14:53:42.022Z"
+  },
+  {
+    "id": "1788447224495intk",
+    "tag": "C",
+    "ganadorId": "avrillavigne",
+    "perdedorId": "claraceschin",
+    "fecha": "2026-09-03T14:53:44.495Z"
+  },
+  {
+    "id": "1788447226270qcd7",
+    "tag": "C",
+    "ganadorId": "claraceschin",
+    "perdedorId": "oliviarodrigo",
+    "fecha": "2026-09-03T14:53:46.270Z"
+  },
+  {
+    "id": "17884506890343w9e",
+    "tag": "B",
+    "ganadorId": "arianagrande",
+    "perdedorId": "dualipa",
+    "fecha": "2026-09-03T15:51:29.034Z"
+  },
+  {
+    "id": "1788450691418mlst",
+    "tag": "B",
+    "ganadorId": "arianagrande",
+    "perdedorId": "oliviarodrigo",
+    "fecha": "2026-09-03T15:51:31.418Z"
+  },
+  {
+    "id": "1788450694969u654",
+    "tag": "B",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "arianagrande",
+    "fecha": "2026-09-03T15:51:34.969Z"
+  },
+  {
+    "id": "1788450694970q97b",
+    "tag": "B",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "dualipa",
+    "auto": true,
+    "fecha": "2026-09-03T15:51:34.970Z"
+  },
+  {
+    "id": "1788450694970gi7c",
+    "tag": "B",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "oliviarodrigo",
+    "auto": true,
+    "fecha": "2026-09-03T15:51:34.970Z"
+  },
+  {
+    "id": "1788450696010ze38",
+    "tag": "B",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "claraceschin",
+    "fecha": "2026-09-03T15:51:36.010Z"
+  },
+  {
+    "id": "1788450698260ej1o",
+    "tag": "B",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "avrillavigne",
+    "fecha": "2026-09-03T15:51:38.260Z"
+  },
+  {
+    "id": "17884507014828rb4",
+    "tag": "B",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "aitana",
+    "fecha": "2026-09-03T15:51:41.482Z"
+  },
+  {
+    "id": "1788450703146fjuc",
+    "tag": "B",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "emiliamernes",
+    "fecha": "2026-09-03T15:51:43.146Z"
+  },
+  {
+    "id": "1788450704569ax6e",
+    "tag": "B",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "esterexposito",
+    "fecha": "2026-09-03T15:51:44.569Z"
+  },
+  {
+    "id": "1788450705962htma",
+    "tag": "B",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "angelatorres",
+    "fecha": "2026-09-03T15:51:45.962Z"
+  },
+  {
+    "id": "1788450708578mrqx",
+    "tag": "B",
+    "ganadorId": "beckyg",
+    "perdedorId": "sidneysweeney",
+    "fecha": "2026-09-03T15:51:48.578Z"
+  },
+  {
+    "id": "1788450708578bksa",
+    "tag": "B",
+    "ganadorId": "beckyg",
+    "perdedorId": "arianagrande",
+    "auto": true,
+    "fecha": "2026-09-03T15:51:48.578Z"
+  },
+  {
+    "id": "1788450708578d3jn",
+    "tag": "B",
+    "ganadorId": "beckyg",
+    "perdedorId": "dualipa",
+    "auto": true,
+    "fecha": "2026-09-03T15:51:48.578Z"
+  },
+  {
+    "id": "1788450708578zn4g",
+    "tag": "B",
+    "ganadorId": "beckyg",
+    "perdedorId": "oliviarodrigo",
+    "auto": true,
+    "fecha": "2026-09-03T15:51:48.578Z"
+  },
+  {
+    "id": "1788450708578enug",
+    "tag": "B",
+    "ganadorId": "beckyg",
+    "perdedorId": "claraceschin",
+    "auto": true,
+    "fecha": "2026-09-03T15:51:48.578Z"
+  },
+  {
+    "id": "1788450708578svyy",
+    "tag": "B",
+    "ganadorId": "beckyg",
+    "perdedorId": "avrillavigne",
+    "auto": true,
+    "fecha": "2026-09-03T15:51:48.578Z"
+  },
+  {
+    "id": "1788450708578v8hu",
+    "tag": "B",
+    "ganadorId": "beckyg",
+    "perdedorId": "aitana",
+    "auto": true,
+    "fecha": "2026-09-03T15:51:48.578Z"
+  },
+  {
+    "id": "1788450708578yvg9",
+    "tag": "B",
+    "ganadorId": "beckyg",
+    "perdedorId": "emiliamernes",
+    "auto": true,
+    "fecha": "2026-09-03T15:51:48.578Z"
+  },
+  {
+    "id": "1788450708578yjn8",
+    "tag": "B",
+    "ganadorId": "beckyg",
+    "perdedorId": "esterexposito",
+    "auto": true,
+    "fecha": "2026-09-03T15:51:48.578Z"
+  },
+  {
+    "id": "1788450708578tpnc",
+    "tag": "B",
+    "ganadorId": "beckyg",
+    "perdedorId": "angelatorres",
+    "auto": true,
+    "fecha": "2026-09-03T15:51:48.578Z"
+  },
+  {
+    "id": "17884507096347ms6",
+    "tag": "B",
+    "ganadorId": "beckyg",
+    "perdedorId": "nickinicole",
+    "fecha": "2026-09-03T15:51:49.634Z"
+  },
+  {
+    "id": "1788450710546o9zl",
+    "tag": "B",
+    "ganadorId": "beckyg",
+    "perdedorId": "claragalle",
+    "fecha": "2026-09-03T15:51:50.546Z"
+  },
+  {
+    "id": "178845071209186ux",
+    "tag": "B",
+    "ganadorId": "beckyg",
+    "perdedorId": "sabrinacarpenter",
+    "fecha": "2026-09-03T15:51:52.091Z"
+  },
+  {
+    "id": "17884507128748t15",
+    "tag": "B",
+    "ganadorId": "beckyg",
+    "perdedorId": "anamena",
+    "fecha": "2026-09-03T15:51:52.874Z"
+  },
+  {
+    "id": "17884507137062xzi",
+    "tag": "B",
+    "ganadorId": "beckyg",
+    "perdedorId": "anadearmas",
+    "fecha": "2026-09-03T15:51:53.706Z"
+  },
+  {
+    "id": "17884507165061ml0",
+    "tag": "B",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "dualipa",
+    "fecha": "2026-09-03T15:51:56.506Z"
+  },
+  {
+    "id": "1788450721754znb9",
+    "tag": "B",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "aitana",
+    "fecha": "2026-09-03T15:52:01.754Z"
+  },
+  {
+    "id": "17884507230680md9",
+    "tag": "B",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "nickinicole",
+    "fecha": "2026-09-03T15:52:03.068Z"
+  },
+  {
+    "id": "178845072306889xe",
+    "tag": "B",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "nickinicole",
+    "auto": true,
+    "fecha": "2026-09-03T15:52:03.068Z"
+  },
+  {
+    "id": "1788450724138uozm",
+    "tag": "B",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "angelatorres",
+    "fecha": "2026-09-03T15:52:04.138Z"
+  },
+  {
+    "id": "1788450725010jvx3",
+    "tag": "B",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "claraceschin",
+    "fecha": "2026-09-03T15:52:05.010Z"
+  },
+  {
+    "id": "1788450728570lrw5",
+    "tag": "B",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "claragalle",
+    "fecha": "2026-09-03T15:52:08.570Z"
+  },
+  {
+    "id": "1788450728570vv9f",
+    "tag": "B",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "claragalle",
+    "auto": true,
+    "fecha": "2026-09-03T15:52:08.570Z"
+  },
+  {
+    "id": "1788450729594uv6s",
+    "tag": "B",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "anamena",
+    "fecha": "2026-09-03T15:52:09.594Z"
+  },
+  {
+    "id": "1788450729594oo69",
+    "tag": "B",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "anamena",
+    "auto": true,
+    "fecha": "2026-09-03T15:52:09.594Z"
+  },
+  {
+    "id": "1788450737393wlfp",
+    "tag": "B",
+    "ganadorId": "esterexposito",
+    "perdedorId": "emiliamernes",
+    "fecha": "2026-09-03T15:52:17.393Z"
+  },
+  {
+    "id": "1788450737394n7nm",
+    "tag": "B",
+    "ganadorId": "esterexposito",
+    "perdedorId": "dualipa",
+    "auto": true,
+    "fecha": "2026-09-03T15:52:17.394Z"
+  },
+  {
+    "id": "1788450737394ffvd",
+    "tag": "B",
+    "ganadorId": "esterexposito",
+    "perdedorId": "aitana",
+    "auto": true,
+    "fecha": "2026-09-03T15:52:17.394Z"
+  },
+  {
+    "id": "1788450737394sa1u",
+    "tag": "B",
+    "ganadorId": "esterexposito",
+    "perdedorId": "nickinicole",
+    "auto": true,
+    "fecha": "2026-09-03T15:52:17.394Z"
+  },
+  {
+    "id": "17884507373945eml",
+    "tag": "B",
+    "ganadorId": "esterexposito",
+    "perdedorId": "angelatorres",
+    "auto": true,
+    "fecha": "2026-09-03T15:52:17.394Z"
+  },
+  {
+    "id": "1788450737394z66k",
+    "tag": "B",
+    "ganadorId": "esterexposito",
+    "perdedorId": "claraceschin",
+    "auto": true,
+    "fecha": "2026-09-03T15:52:17.394Z"
+  },
+  {
+    "id": "1788450737394ftop",
+    "tag": "B",
+    "ganadorId": "esterexposito",
+    "perdedorId": "claragalle",
+    "auto": true,
+    "fecha": "2026-09-03T15:52:17.394Z"
+  },
+  {
+    "id": "17884507373943uk5",
+    "tag": "B",
+    "ganadorId": "esterexposito",
+    "perdedorId": "anamena",
+    "auto": true,
+    "fecha": "2026-09-03T15:52:17.394Z"
+  },
+  {
+    "id": "17884507395065hq2",
+    "tag": "B",
+    "ganadorId": "esterexposito",
+    "perdedorId": "anadearmas",
+    "fecha": "2026-09-03T15:52:19.506Z"
+  },
+  {
+    "id": "1788450739506a8ig",
+    "tag": "B",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "anadearmas",
+    "auto": true,
+    "fecha": "2026-09-03T15:52:19.506Z"
+  },
+  {
+    "id": "1788450740793xfpy",
+    "tag": "B",
+    "ganadorId": "esterexposito",
+    "perdedorId": "arianagrande",
+    "fecha": "2026-09-03T15:52:20.793Z"
+  },
+  {
+    "id": "1788450740794lsyd",
+    "tag": "B",
+    "ganadorId": "esterexposito",
+    "perdedorId": "oliviarodrigo",
+    "auto": true,
+    "fecha": "2026-09-03T15:52:20.794Z"
+  },
+  {
+    "id": "1788450743090tp1j",
+    "tag": "B",
+    "ganadorId": "esterexposito",
+    "perdedorId": "avrillavigne",
+    "fecha": "2026-09-03T15:52:23.090Z"
+  },
+  {
+    "id": "1788450749195iqww",
+    "tag": "B",
+    "ganadorId": "esterexposito",
+    "perdedorId": "sabrinacarpenter",
+    "fecha": "2026-09-03T15:52:29.195Z"
+  },
+  {
+    "id": "1788450749195kpps",
+    "tag": "B",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "sabrinacarpenter",
+    "auto": true,
+    "fecha": "2026-09-03T15:52:29.195Z"
+  },
+  {
+    "id": "1788450752362n3kb",
+    "tag": "B",
+    "ganadorId": "nickinicole",
+    "perdedorId": "dualipa",
+    "fecha": "2026-09-03T15:52:32.362Z"
+  },
+  {
+    "id": "1788450754458819g",
+    "tag": "B",
+    "ganadorId": "nickinicole",
+    "perdedorId": "arianagrande",
+    "fecha": "2026-09-03T15:52:34.458Z"
+  },
+  {
+    "id": "17884507544590sc3",
+    "tag": "B",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "arianagrande",
+    "auto": true,
+    "fecha": "2026-09-03T15:52:34.459Z"
+  },
+  {
+    "id": "1788450754459axla",
+    "tag": "B",
+    "ganadorId": "nickinicole",
+    "perdedorId": "oliviarodrigo",
+    "auto": true,
+    "fecha": "2026-09-03T15:52:34.459Z"
+  },
+  {
+    "id": "1788450754460563k",
+    "tag": "B",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "oliviarodrigo",
+    "auto": true,
+    "fecha": "2026-09-03T15:52:34.460Z"
+  },
+  {
+    "id": "1788450756044hzb5",
+    "tag": "B",
+    "ganadorId": "claragalle",
+    "perdedorId": "nickinicole",
+    "fecha": "2026-09-03T15:52:36.045Z"
+  },
+  {
+    "id": "17884507560462ffl",
+    "tag": "B",
+    "ganadorId": "claragalle",
+    "perdedorId": "dualipa",
+    "auto": true,
+    "fecha": "2026-09-03T15:52:36.046Z"
+  },
+  {
+    "id": "1788450756046sjzt",
+    "tag": "B",
+    "ganadorId": "claragalle",
+    "perdedorId": "arianagrande",
+    "auto": true,
+    "fecha": "2026-09-03T15:52:36.046Z"
+  },
+  {
+    "id": "1788450756046rom4",
+    "tag": "B",
+    "ganadorId": "claragalle",
+    "perdedorId": "oliviarodrigo",
+    "auto": true,
+    "fecha": "2026-09-03T15:52:36.046Z"
+  },
+  {
+    "id": "1788450757050rs52",
+    "tag": "B",
+    "ganadorId": "claragalle",
+    "perdedorId": "claraceschin",
+    "fecha": "2026-09-03T15:52:37.050Z"
+  },
+  {
+    "id": "1788450757938vpzx",
+    "tag": "B",
+    "ganadorId": "claragalle",
+    "perdedorId": "avrillavigne",
+    "fecha": "2026-09-03T15:52:37.938Z"
+  },
+  {
+    "id": "1788450757938bdd0",
+    "tag": "B",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "avrillavigne",
+    "auto": true,
+    "fecha": "2026-09-03T15:52:37.938Z"
+  },
+  {
+    "id": "1788450760586awcn",
+    "tag": "B",
+    "ganadorId": "claragalle",
+    "perdedorId": "sabrinacarpenter",
+    "fecha": "2026-09-03T15:52:40.586Z"
+  },
+  {
+    "id": "1788450760587lgdg",
+    "tag": "B",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "sabrinacarpenter",
+    "auto": true,
+    "fecha": "2026-09-03T15:52:40.587Z"
+  },
+  {
+    "id": "1788450762354nvhd",
+    "tag": "B",
+    "ganadorId": "claragalle",
+    "perdedorId": "anamena",
+    "fecha": "2026-09-03T15:52:42.354Z"
+  },
+  {
+    "id": "1788450763428eut9",
+    "tag": "B",
+    "ganadorId": "claragalle",
+    "perdedorId": "anadearmas",
+    "fecha": "2026-09-03T15:52:43.428Z"
+  },
+  {
+    "id": "1788450763428731o",
+    "tag": "B",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "anadearmas",
+    "auto": true,
+    "fecha": "2026-09-03T15:52:43.428Z"
+  },
+  {
+    "id": "1788450764210jamc",
+    "tag": "B",
+    "ganadorId": "claragalle",
+    "perdedorId": "angelatorres",
+    "fecha": "2026-09-03T15:52:44.210Z"
+  },
+  {
+    "id": "17884507730020146",
+    "tag": "B",
+    "ganadorId": "claragalle",
+    "perdedorId": "aitana",
+    "fecha": "2026-09-03T15:52:53.002Z"
+  },
+  {
+    "id": "1788450774794p6m1",
+    "tag": "B",
+    "ganadorId": "aitana",
+    "perdedorId": "dualipa",
+    "fecha": "2026-09-03T15:52:54.794Z"
+  },
+  {
+    "id": "1788450775642b2ur",
+    "tag": "B",
+    "ganadorId": "aitana",
+    "perdedorId": "claraceschin",
+    "fecha": "2026-09-03T15:52:55.642Z"
+  },
+  {
+    "id": "1788450777162hsqe",
+    "tag": "B",
+    "ganadorId": "sabrinacarpenter",
+    "perdedorId": "aitana",
+    "fecha": "2026-09-03T15:52:57.162Z"
+  },
+  {
+    "id": "1788450777162m0o2",
+    "tag": "B",
+    "ganadorId": "sabrinacarpenter",
+    "perdedorId": "dualipa",
+    "auto": true,
+    "fecha": "2026-09-03T15:52:57.162Z"
+  },
+  {
+    "id": "1788450777162i0lh",
+    "tag": "B",
+    "ganadorId": "sabrinacarpenter",
+    "perdedorId": "claraceschin",
+    "auto": true,
+    "fecha": "2026-09-03T15:52:57.162Z"
+  },
+  {
+    "id": "1788450778114kwgp",
+    "tag": "B",
+    "ganadorId": "sabrinacarpenter",
+    "perdedorId": "nickinicole",
+    "fecha": "2026-09-03T15:52:58.114Z"
+  },
+  {
+    "id": "1788450778114ubmk",
+    "tag": "B",
+    "ganadorId": "sabrinacarpenter",
+    "perdedorId": "arianagrande",
+    "auto": true,
+    "fecha": "2026-09-03T15:52:58.114Z"
+  },
+  {
+    "id": "1788450778114xlb6",
+    "tag": "B",
+    "ganadorId": "sabrinacarpenter",
+    "perdedorId": "oliviarodrigo",
+    "auto": true,
+    "fecha": "2026-09-03T15:52:58.114Z"
+  },
+  {
+    "id": "17884507794508qxy",
+    "tag": "B",
+    "ganadorId": "sabrinacarpenter",
+    "perdedorId": "anadearmas",
+    "fecha": "2026-09-03T15:52:59.450Z"
+  },
+  {
+    "id": "1788450780282rx0p",
+    "tag": "B",
+    "ganadorId": "sabrinacarpenter",
+    "perdedorId": "anamena",
+    "fecha": "2026-09-03T15:53:00.282Z"
+  },
+  {
+    "id": "17884507811785pb3",
+    "tag": "B",
+    "ganadorId": "sabrinacarpenter",
+    "perdedorId": "angelatorres",
+    "fecha": "2026-09-03T15:53:01.178Z"
+  },
+  {
+    "id": "1788450781904on6l",
+    "tag": "B",
+    "ganadorId": "sabrinacarpenter",
+    "perdedorId": "avrillavigne",
+    "fecha": "2026-09-03T15:53:01.904Z"
+  },
+  {
+    "id": "178845078493053ay",
+    "tag": "B",
+    "ganadorId": "avrillavigne",
+    "perdedorId": "dualipa",
+    "fecha": "2026-09-03T15:53:04.930Z"
+  },
+  {
+    "id": "178845078645020xy",
+    "tag": "B",
+    "ganadorId": "aitana",
+    "perdedorId": "avrillavigne",
+    "fecha": "2026-09-03T15:53:06.450Z"
+  },
+  {
+    "id": "17884507881553hzu",
+    "tag": "B",
+    "ganadorId": "aitana",
+    "perdedorId": "oliviarodrigo",
+    "fecha": "2026-09-03T15:53:08.155Z"
+  },
+  {
+    "id": "17884507889464d75",
+    "tag": "B",
+    "ganadorId": "aitana",
+    "perdedorId": "angelatorres",
+    "fecha": "2026-09-03T15:53:08.946Z"
+  },
+  {
+    "id": "1788450790523gaoc",
+    "tag": "B",
+    "ganadorId": "aitana",
+    "perdedorId": "anadearmas",
+    "fecha": "2026-09-03T15:53:10.523Z"
+  },
+  {
+    "id": "1788450791323eav7",
+    "tag": "B",
+    "ganadorId": "aitana",
+    "perdedorId": "nickinicole",
+    "fecha": "2026-09-03T15:53:11.323Z"
+  },
+  {
+    "id": "1788450791323fmq2",
+    "tag": "B",
+    "ganadorId": "aitana",
+    "perdedorId": "arianagrande",
+    "auto": true,
+    "fecha": "2026-09-03T15:53:11.323Z"
+  },
+  {
+    "id": "1788450791994vyi5",
+    "tag": "B",
+    "ganadorId": "aitana",
+    "perdedorId": "anamena",
+    "fecha": "2026-09-03T15:53:11.994Z"
+  },
+  {
+    "id": "1788450793978omq5",
+    "tag": "B",
+    "ganadorId": "dualipa",
+    "perdedorId": "anamena",
+    "fecha": "2026-09-03T15:53:13.978Z"
+  },
+  {
+    "id": "1788450793978gu93",
+    "tag": "B",
+    "ganadorId": "arianagrande",
+    "perdedorId": "anamena",
+    "auto": true,
+    "fecha": "2026-09-03T15:53:13.978Z"
+  },
+  {
+    "id": "17884507939783zxb",
+    "tag": "B",
+    "ganadorId": "nickinicole",
+    "perdedorId": "anamena",
+    "auto": true,
+    "fecha": "2026-09-03T15:53:13.978Z"
+  },
+  {
+    "id": "1788450793978y90w",
+    "tag": "B",
+    "ganadorId": "avrillavigne",
+    "perdedorId": "anamena",
+    "auto": true,
+    "fecha": "2026-09-03T15:53:13.978Z"
+  },
+  {
+    "id": "17884507956350ye5",
+    "tag": "B",
+    "ganadorId": "angelatorres",
+    "perdedorId": "dualipa",
+    "fecha": "2026-09-03T15:53:15.635Z"
+  },
+  {
+    "id": "17884507956357d9q",
+    "tag": "B",
+    "ganadorId": "angelatorres",
+    "perdedorId": "anamena",
+    "auto": true,
+    "fecha": "2026-09-03T15:53:15.635Z"
+  },
+  {
+    "id": "1788450797946mdvk",
+    "tag": "B",
+    "ganadorId": "angelatorres",
+    "perdedorId": "claraceschin",
+    "fecha": "2026-09-03T15:53:17.946Z"
+  },
+  {
+    "id": "1788450799594ob8a",
+    "tag": "B",
+    "ganadorId": "angelatorres",
+    "perdedorId": "nickinicole",
+    "fecha": "2026-09-03T15:53:19.594Z"
+  },
+  {
+    "id": "1788450799595ieqw",
+    "tag": "B",
+    "ganadorId": "angelatorres",
+    "perdedorId": "arianagrande",
+    "auto": true,
+    "fecha": "2026-09-03T15:53:19.595Z"
+  },
+  {
+    "id": "1788450799595t3ug",
+    "tag": "B",
+    "ganadorId": "angelatorres",
+    "perdedorId": "oliviarodrigo",
+    "auto": true,
+    "fecha": "2026-09-03T15:53:19.595Z"
+  },
+  {
+    "id": "1788450800755ohdc",
+    "tag": "B",
+    "ganadorId": "angelatorres",
+    "perdedorId": "avrillavigne",
+    "fecha": "2026-09-03T15:53:20.755Z"
+  },
+  {
+    "id": "1788450801906y0bb",
+    "tag": "B",
+    "ganadorId": "anadearmas",
+    "perdedorId": "angelatorres",
+    "fecha": "2026-09-03T15:53:21.906Z"
+  },
+  {
+    "id": "1788450801907h4wk",
+    "tag": "B",
+    "ganadorId": "anadearmas",
+    "perdedorId": "dualipa",
+    "auto": true,
+    "fecha": "2026-09-03T15:53:21.907Z"
+  },
+  {
+    "id": "17884508019075lxm",
+    "tag": "B",
+    "ganadorId": "anadearmas",
+    "perdedorId": "anamena",
+    "auto": true,
+    "fecha": "2026-09-03T15:53:21.907Z"
+  },
+  {
+    "id": "17884508019070jix",
+    "tag": "B",
+    "ganadorId": "anadearmas",
+    "perdedorId": "claraceschin",
+    "auto": true,
+    "fecha": "2026-09-03T15:53:21.907Z"
+  },
+  {
+    "id": "17884508019075d0b",
+    "tag": "B",
+    "ganadorId": "anadearmas",
+    "perdedorId": "nickinicole",
+    "auto": true,
+    "fecha": "2026-09-03T15:53:21.907Z"
+  },
+  {
+    "id": "1788450801907vxks",
+    "tag": "B",
+    "ganadorId": "anadearmas",
+    "perdedorId": "arianagrande",
+    "auto": true,
+    "fecha": "2026-09-03T15:53:21.907Z"
+  },
+  {
+    "id": "1788450801907l0n3",
+    "tag": "B",
+    "ganadorId": "anadearmas",
+    "perdedorId": "oliviarodrigo",
+    "auto": true,
+    "fecha": "2026-09-03T15:53:21.907Z"
+  },
+  {
+    "id": "17884508019071bk5",
+    "tag": "B",
+    "ganadorId": "anadearmas",
+    "perdedorId": "avrillavigne",
+    "auto": true,
+    "fecha": "2026-09-03T15:53:21.907Z"
+  },
+  {
+    "id": "17884508035558lvs",
+    "tag": "B",
+    "ganadorId": "dualipa",
+    "perdedorId": "oliviarodrigo",
+    "fecha": "2026-09-03T15:53:23.555Z"
+  },
+  {
+    "id": "17884508035564676",
+    "tag": "B",
+    "ganadorId": "avrillavigne",
+    "perdedorId": "oliviarodrigo",
+    "auto": true,
+    "fecha": "2026-09-03T15:53:23.556Z"
+  },
+  {
+    "id": "1788450805100n16r",
+    "tag": "B",
+    "ganadorId": "dualipa",
+    "perdedorId": "claraceschin",
+    "fecha": "2026-09-03T15:53:25.100Z"
+  },
+  {
+    "id": "17884508051006ccd",
+    "tag": "B",
+    "ganadorId": "arianagrande",
+    "perdedorId": "claraceschin",
+    "auto": true,
+    "fecha": "2026-09-03T15:53:25.100Z"
+  },
+  {
+    "id": "1788450805100zw1a",
+    "tag": "B",
+    "ganadorId": "nickinicole",
+    "perdedorId": "claraceschin",
+    "auto": true,
+    "fecha": "2026-09-03T15:53:25.100Z"
+  },
+  {
+    "id": "1788450805101mh8g",
+    "tag": "B",
+    "ganadorId": "avrillavigne",
+    "perdedorId": "claraceschin",
+    "auto": true,
+    "fecha": "2026-09-03T15:53:25.101Z"
+  },
+  {
+    "id": "1788450808738qdvo",
+    "tag": "B",
+    "ganadorId": "arianagrande",
+    "perdedorId": "avrillavigne",
+    "fecha": "2026-09-03T15:53:28.738Z"
+  },
+  {
+    "id": "17884508087387sm2",
+    "tag": "B",
+    "ganadorId": "nickinicole",
+    "perdedorId": "avrillavigne",
+    "auto": true,
+    "fecha": "2026-09-03T15:53:28.738Z"
+  },
+  {
+    "id": "17884508154262vvg",
+    "tag": "B",
+    "ganadorId": "anamena",
+    "perdedorId": "oliviarodrigo",
+    "fecha": "2026-09-03T15:53:35.426Z"
+  },
+  {
+    "id": "1788450817418cawr",
+    "tag": "B",
+    "ganadorId": "claraceschin",
+    "perdedorId": "anamena",
+    "fecha": "2026-09-03T15:53:37.418Z"
+  },
+  {
+    "id": "1788450817419yuds",
+    "tag": "B",
+    "ganadorId": "claraceschin",
+    "perdedorId": "oliviarodrigo",
+    "auto": true,
+    "fecha": "2026-09-03T15:53:37.419Z"
+  },
+  {
+    "id": "1788451118064vp8a",
+    "tag": "P",
+    "ganadorId": "dualipa",
+    "perdedorId": "arianagrande",
+    "fecha": "2026-09-03T15:58:38.064Z"
+  },
+  {
+    "id": "1788451121140nfof",
+    "tag": "P",
+    "ganadorId": "dualipa",
+    "perdedorId": "aitana",
+    "fecha": "2026-09-03T15:58:41.140Z"
+  },
+  {
+    "id": "178845112830912f4",
+    "tag": "P",
+    "ganadorId": "dualipa",
+    "perdedorId": "claragalle",
+    "fecha": "2026-09-03T15:58:48.309Z"
+  },
+  {
+    "id": "1788451130778x14u",
+    "tag": "P",
+    "ganadorId": "dualipa",
+    "perdedorId": "sabrinacarpenter",
+    "fecha": "2026-09-03T15:58:50.778Z"
+  },
+  {
+    "id": "1788451132267o7gr",
+    "tag": "P",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "dualipa",
+    "fecha": "2026-09-03T15:58:52.267Z"
+  },
+  {
+    "id": "17884511322675epu",
+    "tag": "P",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "arianagrande",
+    "auto": true,
+    "fecha": "2026-09-03T15:58:52.267Z"
+  },
+  {
+    "id": "1788451132267j326",
+    "tag": "P",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "aitana",
+    "auto": true,
+    "fecha": "2026-09-03T15:58:52.267Z"
+  },
+  {
+    "id": "1788451132267yexh",
+    "tag": "P",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "claragalle",
+    "auto": true,
+    "fecha": "2026-09-03T15:58:52.267Z"
+  },
+  {
+    "id": "1788451132267rxph",
+    "tag": "P",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "sabrinacarpenter",
+    "auto": true,
+    "fecha": "2026-09-03T15:58:52.267Z"
+  },
+  {
+    "id": "1788451132746t9b7",
+    "tag": "P",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "avrillavigne",
+    "fecha": "2026-09-03T15:58:52.746Z"
+  },
+  {
+    "id": "1788451133634cb5k",
+    "tag": "P",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "oliviarodrigo",
+    "fecha": "2026-09-03T15:58:53.634Z"
+  },
+  {
+    "id": "1788451134390mry7",
+    "tag": "P",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "angelatorres",
+    "fecha": "2026-09-03T15:58:54.390Z"
+  },
+  {
+    "id": "1788451134883ceti",
+    "tag": "P",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "beckyg",
+    "fecha": "2026-09-03T15:58:54.883Z"
+  },
+  {
+    "id": "17884511353460j5c",
+    "tag": "P",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "emiliamernes",
+    "fecha": "2026-09-03T15:58:55.346Z"
+  },
+  {
+    "id": "1788451136075dqxp",
+    "tag": "P",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "claraceschin",
+    "fecha": "2026-09-03T15:58:56.075Z"
+  },
+  {
+    "id": "1788451136524cddb",
+    "tag": "P",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "esterexposito",
+    "fecha": "2026-09-03T15:58:56.524Z"
+  },
+  {
+    "id": "1788451137011oznd",
+    "tag": "P",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "anamena",
+    "fecha": "2026-09-03T15:58:57.011Z"
+  },
+  {
+    "id": "1788451137458lq40",
+    "tag": "P",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "anadearmas",
+    "fecha": "2026-09-03T15:58:57.458Z"
+  },
+  {
+    "id": "1788451138395g51m",
+    "tag": "P",
+    "ganadorId": "sidneysweeney",
+    "perdedorId": "nickinicole",
+    "fecha": "2026-09-03T15:58:58.395Z"
+  },
+  {
+    "id": "178845114161901ka",
+    "tag": "P",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "dualipa",
+    "fecha": "2026-09-03T15:59:01.619Z"
+  },
+  {
+    "id": "1788451141619ovwb",
+    "tag": "P",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "arianagrande",
+    "auto": true,
+    "fecha": "2026-09-03T15:59:01.619Z"
+  },
+  {
+    "id": "17884511416198lzk",
+    "tag": "P",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "aitana",
+    "auto": true,
+    "fecha": "2026-09-03T15:59:01.619Z"
+  },
+  {
+    "id": "178845114161934b1",
+    "tag": "P",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "claragalle",
+    "auto": true,
+    "fecha": "2026-09-03T15:59:01.619Z"
+  },
+  {
+    "id": "1788451141619ndiu",
+    "tag": "P",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "sabrinacarpenter",
+    "auto": true,
+    "fecha": "2026-09-03T15:59:01.619Z"
+  },
+  {
+    "id": "1788451142890lywq",
+    "tag": "P",
+    "ganadorId": "beckyg",
+    "perdedorId": "emiliamernes",
+    "fecha": "2026-09-03T15:59:02.890Z"
+  },
+  {
+    "id": "1788451142891x3i8",
+    "tag": "P",
+    "ganadorId": "beckyg",
+    "perdedorId": "dualipa",
+    "auto": true,
+    "fecha": "2026-09-03T15:59:02.891Z"
+  },
+  {
+    "id": "1788451142891ug3d",
+    "tag": "P",
+    "ganadorId": "beckyg",
+    "perdedorId": "arianagrande",
+    "auto": true,
+    "fecha": "2026-09-03T15:59:02.891Z"
+  },
+  {
+    "id": "1788451142891hzxw",
+    "tag": "P",
+    "ganadorId": "beckyg",
+    "perdedorId": "aitana",
+    "auto": true,
+    "fecha": "2026-09-03T15:59:02.891Z"
+  },
+  {
+    "id": "1788451142891mq76",
+    "tag": "P",
+    "ganadorId": "beckyg",
+    "perdedorId": "claragalle",
+    "auto": true,
+    "fecha": "2026-09-03T15:59:02.891Z"
+  },
+  {
+    "id": "1788451142891l42s",
+    "tag": "P",
+    "ganadorId": "beckyg",
+    "perdedorId": "sabrinacarpenter",
+    "auto": true,
+    "fecha": "2026-09-03T15:59:02.891Z"
+  },
+  {
+    "id": "1788451144674cws8",
+    "tag": "P",
+    "ganadorId": "beckyg",
+    "perdedorId": "angelatorres",
+    "fecha": "2026-09-03T15:59:04.674Z"
+  },
+  {
+    "id": "1788451145474m12b",
+    "tag": "P",
+    "ganadorId": "beckyg",
+    "perdedorId": "oliviarodrigo",
+    "fecha": "2026-09-03T15:59:05.474Z"
+  },
+  {
+    "id": "1788451146107xrul",
+    "tag": "P",
+    "ganadorId": "beckyg",
+    "perdedorId": "avrillavigne",
+    "fecha": "2026-09-03T15:59:06.107Z"
+  },
+  {
+    "id": "17884511469302opw",
+    "tag": "P",
+    "ganadorId": "beckyg",
+    "perdedorId": "anadearmas",
+    "fecha": "2026-09-03T15:59:06.930Z"
+  },
+  {
+    "id": "17884511477392uf4",
+    "tag": "P",
+    "ganadorId": "beckyg",
+    "perdedorId": "esterexposito",
+    "fecha": "2026-09-03T15:59:07.739Z"
+  },
+  {
+    "id": "1788451149042vwoo",
+    "tag": "P",
+    "ganadorId": "beckyg",
+    "perdedorId": "anamena",
+    "fecha": "2026-09-03T15:59:09.042Z"
+  },
+  {
+    "id": "17884511499077i44",
+    "tag": "P",
+    "ganadorId": "beckyg",
+    "perdedorId": "nickinicole",
+    "fecha": "2026-09-03T15:59:09.907Z"
+  },
+  {
+    "id": "178845115093034in",
+    "tag": "P",
+    "ganadorId": "beckyg",
+    "perdedorId": "claraceschin",
+    "fecha": "2026-09-03T15:59:10.930Z"
+  },
+  {
+    "id": "1788451159658n9eq",
+    "tag": "P",
+    "ganadorId": "nickinicole",
+    "perdedorId": "dualipa",
+    "fecha": "2026-09-03T15:59:19.658Z"
+  },
+  {
+    "id": "17884511596584r4j",
+    "tag": "P",
+    "ganadorId": "nickinicole",
+    "perdedorId": "arianagrande",
+    "auto": true,
+    "fecha": "2026-09-03T15:59:19.658Z"
+  },
+  {
+    "id": "1788451159658l8uj",
+    "tag": "P",
+    "ganadorId": "nickinicole",
+    "perdedorId": "aitana",
+    "auto": true,
+    "fecha": "2026-09-03T15:59:19.658Z"
+  },
+  {
+    "id": "1788451159658xbkp",
+    "tag": "P",
+    "ganadorId": "nickinicole",
+    "perdedorId": "claragalle",
+    "auto": true,
+    "fecha": "2026-09-03T15:59:19.658Z"
+  },
+  {
+    "id": "1788451159658l06k",
+    "tag": "P",
+    "ganadorId": "nickinicole",
+    "perdedorId": "sabrinacarpenter",
+    "auto": true,
+    "fecha": "2026-09-03T15:59:19.658Z"
+  },
+  {
+    "id": "1788451161490a6tc",
+    "tag": "P",
+    "ganadorId": "nickinicole",
+    "perdedorId": "anamena",
+    "fecha": "2026-09-03T15:59:21.490Z"
+  },
+  {
+    "id": "1788451162890mkyp",
+    "tag": "P",
+    "ganadorId": "nickinicole",
+    "perdedorId": "angelatorres",
+    "fecha": "2026-09-03T15:59:22.890Z"
+  },
+  {
+    "id": "17884511663543pf5",
+    "tag": "P",
+    "ganadorId": "nickinicole",
+    "perdedorId": "avrillavigne",
+    "fecha": "2026-09-03T15:59:26.354Z"
+  },
+  {
+    "id": "17884511678521eef",
+    "tag": "P",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "nickinicole",
+    "fecha": "2026-09-03T15:59:27.852Z"
+  },
+  {
+    "id": "17884511678523jgh",
+    "tag": "P",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "anamena",
+    "auto": true,
+    "fecha": "2026-09-03T15:59:27.852Z"
+  },
+  {
+    "id": "1788451167852vhbd",
+    "tag": "P",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "angelatorres",
+    "auto": true,
+    "fecha": "2026-09-03T15:59:27.852Z"
+  },
+  {
+    "id": "1788451167852vypj",
+    "tag": "P",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "avrillavigne",
+    "auto": true,
+    "fecha": "2026-09-03T15:59:27.852Z"
+  },
+  {
+    "id": "1788451169202dl50",
+    "tag": "P",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "oliviarodrigo",
+    "fecha": "2026-09-03T15:59:29.202Z"
+  },
+  {
+    "id": "1788451174468yzry",
+    "tag": "P",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "esterexposito",
+    "fecha": "2026-09-03T15:59:34.468Z"
+  },
+  {
+    "id": "17884511773063vuw",
+    "tag": "P",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "anadearmas",
+    "fecha": "2026-09-03T15:59:37.306Z"
+  },
+  {
+    "id": "1788451181210idsk",
+    "tag": "P",
+    "ganadorId": "emiliamernes",
+    "perdedorId": "claraceschin",
+    "fecha": "2026-09-03T15:59:41.210Z"
+  },
+  {
+    "id": "1788451182659ub8e",
+    "tag": "P",
+    "ganadorId": "dualipa",
+    "perdedorId": "avrillavigne",
+    "fecha": "2026-09-03T15:59:42.659Z"
+  },
+  {
+    "id": "1788451184227xann",
+    "tag": "P",
+    "ganadorId": "dualipa",
+    "perdedorId": "anamena",
+    "fecha": "2026-09-03T15:59:44.227Z"
+  },
+  {
+    "id": "17884511856297ppe",
+    "tag": "P",
+    "ganadorId": "dualipa",
+    "perdedorId": "angelatorres",
+    "fecha": "2026-09-03T15:59:45.629Z"
+  },
+  {
+    "id": "1788451187346tne1",
+    "tag": "P",
+    "ganadorId": "claraceschin",
+    "perdedorId": "dualipa",
+    "fecha": "2026-09-03T15:59:47.346Z"
+  },
+  {
+    "id": "17884511873477p7t",
+    "tag": "P",
+    "ganadorId": "claraceschin",
+    "perdedorId": "arianagrande",
+    "auto": true,
+    "fecha": "2026-09-03T15:59:47.347Z"
+  },
+  {
+    "id": "17884511873474hrt",
+    "tag": "P",
+    "ganadorId": "claraceschin",
+    "perdedorId": "aitana",
+    "auto": true,
+    "fecha": "2026-09-03T15:59:47.347Z"
+  },
+  {
+    "id": "1788451187347mgq3",
+    "tag": "P",
+    "ganadorId": "claraceschin",
+    "perdedorId": "claragalle",
+    "auto": true,
+    "fecha": "2026-09-03T15:59:47.347Z"
+  },
+  {
+    "id": "1788451187347urcp",
+    "tag": "P",
+    "ganadorId": "claraceschin",
+    "perdedorId": "sabrinacarpenter",
+    "auto": true,
+    "fecha": "2026-09-03T15:59:47.347Z"
+  },
+  {
+    "id": "17884511873479crk",
+    "tag": "P",
+    "ganadorId": "claraceschin",
+    "perdedorId": "avrillavigne",
+    "auto": true,
+    "fecha": "2026-09-03T15:59:47.347Z"
+  },
+  {
+    "id": "1788451187347o09w",
+    "tag": "P",
+    "ganadorId": "claraceschin",
+    "perdedorId": "anamena",
+    "auto": true,
+    "fecha": "2026-09-03T15:59:47.347Z"
+  },
+  {
+    "id": "1788451187347c40b",
+    "tag": "P",
+    "ganadorId": "claraceschin",
+    "perdedorId": "angelatorres",
+    "auto": true,
+    "fecha": "2026-09-03T15:59:47.347Z"
+  },
+  {
+    "id": "1788451193125x441",
+    "tag": "P",
+    "ganadorId": "claraceschin",
+    "perdedorId": "anadearmas",
+    "fecha": "2026-09-03T15:59:53.125Z"
+  },
+  {
+    "id": "1788451194339n9wx",
+    "tag": "P",
+    "ganadorId": "claraceschin",
+    "perdedorId": "oliviarodrigo",
+    "fecha": "2026-09-03T15:59:54.339Z"
+  },
+  {
+    "id": "178845119566044nt",
+    "tag": "P",
+    "ganadorId": "esterexposito",
+    "perdedorId": "claraceschin",
+    "fecha": "2026-09-03T15:59:55.660Z"
+  },
+  {
+    "id": "1788451195661o10i",
+    "tag": "P",
+    "ganadorId": "esterexposito",
+    "perdedorId": "dualipa",
+    "auto": true,
+    "fecha": "2026-09-03T15:59:55.661Z"
+  },
+  {
+    "id": "1788451195661pv8n",
+    "tag": "P",
+    "ganadorId": "esterexposito",
+    "perdedorId": "arianagrande",
+    "auto": true,
+    "fecha": "2026-09-03T15:59:55.661Z"
+  },
+  {
+    "id": "178845119566175um",
+    "tag": "P",
+    "ganadorId": "esterexposito",
+    "perdedorId": "aitana",
+    "auto": true,
+    "fecha": "2026-09-03T15:59:55.661Z"
+  },
+  {
+    "id": "1788451195661fohs",
+    "tag": "P",
+    "ganadorId": "esterexposito",
+    "perdedorId": "claragalle",
+    "auto": true,
+    "fecha": "2026-09-03T15:59:55.661Z"
+  },
+  {
+    "id": "1788451195661nqf8",
+    "tag": "P",
+    "ganadorId": "esterexposito",
+    "perdedorId": "sabrinacarpenter",
+    "auto": true,
+    "fecha": "2026-09-03T15:59:55.661Z"
+  },
+  {
+    "id": "17884511956618u4n",
+    "tag": "P",
+    "ganadorId": "esterexposito",
+    "perdedorId": "avrillavigne",
+    "auto": true,
+    "fecha": "2026-09-03T15:59:55.661Z"
+  },
+  {
+    "id": "1788451195661a8a7",
+    "tag": "P",
+    "ganadorId": "esterexposito",
+    "perdedorId": "anamena",
+    "auto": true,
+    "fecha": "2026-09-03T15:59:55.661Z"
+  },
+  {
+    "id": "17884511956617vm9",
+    "tag": "P",
+    "ganadorId": "esterexposito",
+    "perdedorId": "angelatorres",
+    "auto": true,
+    "fecha": "2026-09-03T15:59:55.661Z"
+  },
+  {
+    "id": "1788451195661ndh3",
+    "tag": "P",
+    "ganadorId": "esterexposito",
+    "perdedorId": "anadearmas",
+    "auto": true,
+    "fecha": "2026-09-03T15:59:55.661Z"
+  },
+  {
+    "id": "1788451195661jss5",
+    "tag": "P",
+    "ganadorId": "esterexposito",
+    "perdedorId": "oliviarodrigo",
+    "auto": true,
+    "fecha": "2026-09-03T15:59:55.661Z"
+  },
+  {
+    "id": "1788451208219wnjk",
+    "tag": "P",
+    "ganadorId": "esterexposito",
+    "perdedorId": "nickinicole",
+    "fecha": "2026-09-03T16:00:08.219Z"
+  },
+  {
+    "id": "1788451210587sgw4",
+    "tag": "P",
+    "ganadorId": "dualipa",
+    "perdedorId": "anadearmas",
+    "fecha": "2026-09-03T16:00:10.587Z"
+  },
+  {
+    "id": "17884512105871ctc",
+    "tag": "P",
+    "ganadorId": "nickinicole",
+    "perdedorId": "anadearmas",
+    "auto": true,
+    "fecha": "2026-09-03T16:00:10.587Z"
+  },
+  {
+    "id": "1788451211787jn61",
+    "tag": "P",
+    "ganadorId": "dualipa",
+    "perdedorId": "oliviarodrigo",
+    "fecha": "2026-09-03T16:00:11.787Z"
+  },
+  {
+    "id": "17884512117872ir6",
+    "tag": "P",
+    "ganadorId": "nickinicole",
+    "perdedorId": "oliviarodrigo",
+    "auto": true,
+    "fecha": "2026-09-03T16:00:11.787Z"
+  },
+  {
+    "id": "1788451214826cjyh",
+    "tag": "P",
+    "ganadorId": "arianagrande",
+    "perdedorId": "aitana",
+    "fecha": "2026-09-03T16:00:14.826Z"
+  },
+  {
+    "id": "1788451218251f7hz",
+    "tag": "P",
+    "ganadorId": "arianagrande",
+    "perdedorId": "anadearmas",
+    "fecha": "2026-09-03T16:00:18.251Z"
+  },
+  {
+    "id": "17884512194519zuw",
+    "tag": "P",
+    "ganadorId": "arianagrande",
+    "perdedorId": "avrillavigne",
+    "fecha": "2026-09-03T16:00:19.451Z"
+  },
+  {
+    "id": "1788451221226sasy",
+    "tag": "P",
+    "ganadorId": "arianagrande",
+    "perdedorId": "sabrinacarpenter",
+    "fecha": "2026-09-03T16:00:21.226Z"
+  },
+  {
+    "id": "1788451222638koa3",
+    "tag": "P",
+    "ganadorId": "arianagrande",
+    "perdedorId": "anamena",
+    "fecha": "2026-09-03T16:00:22.638Z"
+  },
+  {
+    "id": "17884512240747ply",
+    "tag": "P",
+    "ganadorId": "arianagrande",
+    "perdedorId": "angelatorres",
+    "fecha": "2026-09-03T16:00:24.074Z"
+  },
+  {
+    "id": "1788451226979nl71",
+    "tag": "P",
+    "ganadorId": "arianagrande",
+    "perdedorId": "claragalle",
+    "fecha": "2026-09-03T16:00:26.979Z"
+  },
+  {
+    "id": "1788451228554hv2a",
+    "tag": "P",
+    "ganadorId": "arianagrande",
+    "perdedorId": "oliviarodrigo",
+    "fecha": "2026-09-03T16:00:28.554Z"
+  },
+  {
+    "id": "1788451232436l4v0",
+    "tag": "P",
+    "ganadorId": "claraceschin",
+    "perdedorId": "nickinicole",
+    "fecha": "2026-09-03T16:00:32.436Z"
+  },
+  {
+    "id": "17884512340679bc1",
+    "tag": "P",
+    "ganadorId": "aitana",
+    "perdedorId": "avrillavigne",
+    "fecha": "2026-09-03T16:00:34.067Z"
+  },
+  {
+    "id": "1788451235115s1fs",
+    "tag": "P",
+    "ganadorId": "aitana",
+    "perdedorId": "angelatorres",
+    "fecha": "2026-09-03T16:00:35.115Z"
+  },
+  {
+    "id": "1788451236034sitv",
+    "tag": "P",
+    "ganadorId": "aitana",
+    "perdedorId": "oliviarodrigo",
+    "fecha": "2026-09-03T16:00:36.034Z"
+  },
+  {
+    "id": "1788451236874hu3j",
+    "tag": "P",
+    "ganadorId": "aitana",
+    "perdedorId": "anamena",
+    "fecha": "2026-09-03T16:00:36.874Z"
+  },
+  {
+    "id": "1788451241882mmdt",
+    "tag": "P",
+    "ganadorId": "aitana",
+    "perdedorId": "claragalle",
+    "fecha": "2026-09-03T16:00:41.882Z"
+  },
+  {
+    "id": "1788451243597bkbm",
+    "tag": "P",
+    "ganadorId": "aitana",
+    "perdedorId": "sabrinacarpenter",
+    "fecha": "2026-09-03T16:00:43.597Z"
+  },
+  {
+    "id": "1788451249795huu7",
+    "tag": "P",
+    "ganadorId": "aitana",
+    "perdedorId": "anadearmas",
+    "fecha": "2026-09-03T16:00:49.795Z"
+  },
+  {
+    "id": "1788451255466ogri",
+    "tag": "P",
+    "ganadorId": "anamena",
+    "perdedorId": "avrillavigne",
+    "fecha": "2026-09-03T16:00:55.466Z"
+  },
+  {
+    "id": "1788451256754ldi4",
+    "tag": "P",
+    "ganadorId": "oliviarodrigo",
+    "perdedorId": "anamena",
+    "fecha": "2026-09-03T16:00:56.754Z"
+  },
+  {
+    "id": "1788451256760drxi",
+    "tag": "P",
+    "ganadorId": "oliviarodrigo",
+    "perdedorId": "avrillavigne",
+    "auto": true,
+    "fecha": "2026-09-03T16:00:56.760Z"
+  },
+  {
+    "id": "17884512586183n7g",
+    "tag": "P",
+    "ganadorId": "anadearmas",
+    "perdedorId": "oliviarodrigo",
+    "fecha": "2026-09-03T16:00:58.618Z"
+  },
+  {
+    "id": "1788451258619f9ld",
+    "tag": "P",
+    "ganadorId": "anadearmas",
+    "perdedorId": "anamena",
+    "auto": true,
+    "fecha": "2026-09-03T16:00:58.619Z"
+  },
+  {
+    "id": "1788451258619b2x2",
+    "tag": "P",
+    "ganadorId": "anadearmas",
+    "perdedorId": "avrillavigne",
+    "auto": true,
+    "fecha": "2026-09-03T16:00:58.619Z"
+  },
+  {
+    "id": "1788451260542qtti",
+    "tag": "P",
+    "ganadorId": "anadearmas",
+    "perdedorId": "sabrinacarpenter",
+    "fecha": "2026-09-03T16:01:00.542Z"
+  },
+  {
+    "id": "1788451261786uqmb",
+    "tag": "P",
+    "ganadorId": "anadearmas",
+    "perdedorId": "angelatorres",
+    "fecha": "2026-09-03T16:01:01.786Z"
+  },
+  {
+    "id": "178845126421882ai",
+    "tag": "P",
+    "ganadorId": "claragalle",
+    "perdedorId": "anadearmas",
+    "fecha": "2026-09-03T16:01:04.218Z"
+  },
+  {
+    "id": "1788451264219mn7j",
+    "tag": "P",
+    "ganadorId": "claragalle",
+    "perdedorId": "oliviarodrigo",
+    "auto": true,
+    "fecha": "2026-09-03T16:01:04.220Z"
+  },
+  {
+    "id": "1788451264220shw3",
+    "tag": "P",
+    "ganadorId": "claragalle",
+    "perdedorId": "anamena",
+    "auto": true,
+    "fecha": "2026-09-03T16:01:04.220Z"
+  },
+  {
+    "id": "17884512642209m85",
+    "tag": "P",
+    "ganadorId": "claragalle",
+    "perdedorId": "avrillavigne",
+    "auto": true,
+    "fecha": "2026-09-03T16:01:04.220Z"
+  },
+  {
+    "id": "1788451264220dxow",
+    "tag": "P",
+    "ganadorId": "claragalle",
+    "perdedorId": "sabrinacarpenter",
+    "auto": true,
+    "fecha": "2026-09-03T16:01:04.220Z"
+  },
+  {
+    "id": "1788451264220niou",
+    "tag": "P",
+    "ganadorId": "claragalle",
+    "perdedorId": "angelatorres",
+    "auto": true,
+    "fecha": "2026-09-03T16:01:04.220Z"
+  },
+  {
+    "id": "1788451268910ur2l",
+    "tag": "P",
+    "ganadorId": "sabrinacarpenter",
+    "perdedorId": "avrillavigne",
+    "fecha": "2026-09-03T16:01:08.910Z"
+  },
+  {
+    "id": "17884512704755qnq",
+    "tag": "P",
+    "ganadorId": "oliviarodrigo",
+    "perdedorId": "sabrinacarpenter",
+    "fecha": "2026-09-03T16:01:10.475Z"
+  },
+  {
+    "id": "1788451271621y3kf",
+    "tag": "P",
+    "ganadorId": "angelatorres",
+    "perdedorId": "oliviarodrigo",
+    "fecha": "2026-09-03T16:01:11.621Z"
+  },
+  {
+    "id": "17884512716224poh",
+    "tag": "P",
+    "ganadorId": "angelatorres",
+    "perdedorId": "anamena",
+    "auto": true,
+    "fecha": "2026-09-03T16:01:11.622Z"
+  },
+  {
+    "id": "1788451271622mvxx",
+    "tag": "P",
+    "ganadorId": "angelatorres",
+    "perdedorId": "avrillavigne",
+    "auto": true,
+    "fecha": "2026-09-03T16:01:11.622Z"
+  },
+  {
+    "id": "178845127162265je",
+    "tag": "P",
+    "ganadorId": "angelatorres",
+    "perdedorId": "sabrinacarpenter",
+    "auto": true,
+    "fecha": "2026-09-03T16:01:11.622Z"
+  },
+  {
+    "id": "1788451272987m9f1",
+    "tag": "P",
+    "ganadorId": "anamena",
+    "perdedorId": "sabrinacarpenter",
+    "fecha": "2026-09-03T16:01:12.987Z"
+  }
 ]

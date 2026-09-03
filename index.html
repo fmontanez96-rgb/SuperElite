@@ -1597,14 +1597,33 @@
 
     function abrirLightbox(index) {
       lightboxIndex = index;
-      document.getElementById('modal-lightbox').classList.add('active');
+      const modal = document.getElementById('modal-lightbox');
+      modal.classList.add('active');
       mostrarItemLightbox();
+      
+      if (modal.requestFullscreen) {
+        modal.requestFullscreen().catch(err => console.log("Error al intentar pantalla completa:", err));
+      } else if (modal.webkitRequestFullscreen) {
+        modal.webkitRequestFullscreen();
+      } else if (modal.msRequestFullscreen) {
+        modal.msRequestFullscreen();
+      }
     }
 
     function cerrarLightbox() {
       detenerAutoplay();
       document.getElementById('modal-lightbox').classList.remove('active');
       document.getElementById('lightbox-visor').innerHTML = "";
+      
+      if (document.fullscreenElement) {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) {
+          document.msExitFullscreen();
+        }
+      }
     }
 
     function mostrarItemLightbox() {
@@ -1700,12 +1719,12 @@
 
     modalLightbox.addEventListener('touchstart', function(event) {
       touchStartX = event.changedTouches[0].screenX;
-    }, { passive: true });
+    }, { passive: true, capture: true });
 
     modalLightbox.addEventListener('touchend', function(event) {
       touchEndX = event.changedTouches[0].screenX;
       manejarSwipe();
-    }, { passive: true });
+    }, { passive: true, capture: true });
 
     function manejarSwipe() {
       const umbralSwipe = 50; 

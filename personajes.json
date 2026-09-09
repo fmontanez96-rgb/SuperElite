@@ -540,14 +540,14 @@
     "estatura": "1.68 m"
   },
   {
-    "id": "katyperry",
-    "nombre": "Katy Perry",
-    "imagen": "personajes/katyperry.jpg",
+    "id": "belinda",
+    "nombre": "Belinda",
+    "imagen": "personajes/belinda.jpg",
     "grupo": "Cantantes",
-    "pais": "Estados Unidos",
-    "ciudad": "California",
-    "fechaNacimiento": "1984-10-25",
-    "estatura": "1.70 m"
+    "pais": "España",
+    "ciudad": "Comunidad de Madrid",
+    "fechaNacimiento": "1989-08-15",
+    "estatura": "1.67 m"
   },
   {
     "id": "rihanna",
@@ -750,16 +750,6 @@
     "estatura": "1.78 m"
   },
   {
-    "id": "tarareid",
-    "nombre": "Tara Reid",
-    "imagen": "personajes/tarareid.jpg",
-    "grupo": "Actrices",
-    "pais": "Estados Unidos",
-    "ciudad": "Nueva Jersey",
-    "fechaNacimiento": "1975-11-08",
-    "estatura": "1.65 m"
-  },
-  {
     "id": "rachelhurdwood",
     "nombre": "Rachel Hurd-Wood",
     "imagen": "personajes/rachelhurdwood.jpg",
@@ -767,16 +757,6 @@
     "pais": "Inglaterra",
     "ciudad": "Surrey",
     "fechaNacimiento": "1990-08-17",
-    "estatura": "1.70 m"
-  },
-  {
-    "id": "willaholland",
-    "nombre": "Willa Holland",
-    "imagen": "personajes/willaholland.jpg",
-    "grupo": "Actrices",
-    "pais": "Estados Unidos",
-    "ciudad": "California",
-    "fechaNacimiento": "1991-06-18",
     "estatura": "1.70 m"
   },
   {
@@ -840,16 +820,6 @@
     "estatura": "1.68 m"
   },
   {
-    "id": "roseleslie",
-    "nombre": "Rose Leslie",
-    "imagen": "personajes/roseleslie.jpg",
-    "grupo": "Actrices",
-    "pais": "Escocia",
-    "ciudad": "Aberdeenshire",
-    "fechaNacimiento": "1987-02-09",
-    "estatura": "1.68 m"
-  },
-  {
     "id": "joeyking",
     "nombre": "Joey King",
     "imagen": "personajes/joeyking.jpg",
@@ -858,26 +828,6 @@
     "ciudad": "California",
     "fechaNacimiento": "1999-07-30",
     "estatura": "1.63 m"
-  },
-  {
-    "id": "daisyedgarjones",
-    "nombre": "Daisy Edgar-Jones",
-    "imagen": "personajes/daisyedgarjones.jpg",
-    "grupo": "Actrices",
-    "pais": "Inglaterra",
-    "ciudad": "Gran Londres",
-    "fechaNacimiento": "1998-05-24",
-    "estatura": "1.68 m"
-  },
-  {
-    "id": "freyaallan",
-    "nombre": "Freya Allan",
-    "imagen": "personajes/freyaallan.jpg",
-    "grupo": "Actrices",
-    "pais": "Inglaterra",
-    "ciudad": "Oxfordshire",
-    "fechaNacimiento": "2001-09-06",
-    "estatura": "1.61 m"
   },
   {
     "id": "madisonpettis",
@@ -903,7 +853,7 @@
     "id": "solrivas",
     "nombre": "Sol Rivas",
     "imagen": "personajes/solrivas.jpg",
-    "grupo": "Influencers",
+    "grupo": "Modelos",
     "pais": "Argentina",
     "ciudad": "San Salvador de Jujuy",
     "fechaNacimiento": "",
@@ -933,7 +883,7 @@
     "id": "barbarapucheta",
     "nombre": "Barbara Pucheta",
     "imagen": "personajes/barbarapucheta.jpg",
-    "grupo": "Actrices",
+    "grupo": "Modelos",
     "pais": "Argentina",
     "ciudad": "Buenos Aires",
     "fechaNacimiento": "1994-06-18",
@@ -943,7 +893,7 @@
     "id": "soledadfandinho",
     "nombre": "Soledad Fandinho",
     "imagen": "personajes/soledadfandinho.jpg",
-    "grupo": "Actrices",
+    "grupo": "Modelos",
     "pais": "Argentina",
     "ciudad": "Buenos Aires",
     "fechaNacimiento": "1982-04-07",
@@ -959,16 +909,7 @@
     "fechaNacimiento": "1990-05-18",
     "estatura": ""
   },
-  {
-    "id": "antonellarocuzzo",
-    "nombre": "Antonella Rocuzzo",
-    "imagen": "personajes/antonellarocuzzo.jpg",
-    "grupo": "Influencers",
-    "pais": "Argentina",
-    "ciudad": "Rosario",
-    "fechaNacimiento": "1988-02-26",
-    "estatura": "1.57 m"
-  },
+  
   {
     "id": "georginarodriguez",
     "nombre": "Georgina Rodriguez",
@@ -1160,16 +1101,6 @@
     "estatura": ""
   },
   {
-    "id": "aomimuyock",
-    "nombre": "Aomi Muyock",
-    "imagen": "personajes/aomimuyock.jpg",
-    "grupo": "Actrices",
-    "pais": "Suiza",
-    "ciudad": "Cantón del Tesino",
-    "fechaNacimiento": "1989-01-14",
-    "estatura": "1.76 m"
-  },
-  {
     "id": "saoirseronnan",
     "nombre": "Saoirse Ronnan",
     "imagen": "personajes/saoirseronnan.jpg",
@@ -1280,16 +1211,6 @@
     "estatura": ""
   },
   {
-    "id": "roxyforse",
-    "nombre": "Roxyforse",
-    "imagen": "personajes/roxyforse.jpg",
-    "grupo": "NSFW",
-    "pais": "",
-    "ciudad": "",
-    "fechaNacimiento": "",
-    "estatura": ""
-  },
-  {
     "id": "aldibernardo",
     "nombre": "Aldi Bernardo",
     "imagen": "personajes/aldibernardo.jpg",
@@ -1330,9 +1251,9 @@
     "estatura": "1.65 m"
   },
   {
-    "id": "nbancyace",
+    "id": "nancyace",
     "nombre": "Nancy Ace",
-    "imagen": "personajes/nbancyace.jpg",
+    "imagen": "personajes/nancyace.jpg",
     "grupo": "NSFW",
     "pais": "",
     "ciudad": "",
@@ -1610,26 +1531,6 @@
     "estatura": ""
   },
   {
-    "id": "sofirodriguezuwu",
-    "nombre": "Sofi Rodriguez Uwu",
-    "imagen": "personajes/sofirodriguezuwu.jpg",
-    "grupo": "NSFW",
-    "pais": "",
-    "ciudad": "",
-    "fechaNacimiento": "",
-    "estatura": ""
-  },
-  {
-    "id": "lucyperez",
-    "nombre": "Lucy Perez",
-    "imagen": "personajes/lucyperez.jpg",
-    "grupo": "NSFW",
-    "pais": "",
-    "ciudad": "",
-    "fechaNacimiento": "",
-    "estatura": ""
-  },
-  {
     "id": "lucyuwu",
     "nombre": "Lucy UWU",
     "imagen": "personajes/lucyuwu.jpg",
@@ -1653,10 +1554,30 @@
     "id": "oliviadune",
     "nombre": "Olivia Dune",
     "imagen": "personajes/oliviadune.jpg",
-    "grupo": "Modelos",
+    "grupo": "Bailarinas",
     "pais": "Estados Unidos",
     "ciudad": "Nueva Jersey",
     "fechaNacimiento": "2002-10-01",
+    "estatura": ""
+  },
+  {
+    "id": "alexablairrobertson",
+    "nombre": "Alexa Blair Robertson",
+    "imagen": "personajes/alexablairrobertson.jpg",
+    "grupo": "Actrices",
+    "pais": "Estados Unidos",
+    "ciudad": "Carolina del Norte",
+    "fechaNacimiento": "2000-05-19",
+    "estatura": ""
+  },
+  {
+    "id": "gracevandien",
+    "nombre": "Grace Van Dien",
+    "imagen": "personajes/gracevandien.jpg",
+    "grupo": "Actrices",
+    "pais": "Estados Unidos",
+    "ciudad": "California",
+    "fechaNacimiento": "1996-10-15",
     "estatura": ""
   }
 ]
